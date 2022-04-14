@@ -10657,20 +10657,20 @@ ol.commentlist li .star-rating {
 }
 .theme-btn.bt-support-now{
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1ebbf0+8,39dfaa+100 */
-	background: #cf0000; /* Old browsers */
-	background: -moz-linear-gradient(45deg, #cf0000 8%, #d91a1a 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(45deg, #cf0000 8%,#d91a1a 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(45deg, #cf0000 8%,#d91a1a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cf0000', endColorstr='#d91a1a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	background: #449545; /* Old browsers */
+	background: -moz-linear-gradient(45deg, #449545 8%, #449545 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(45deg, #449545 8%,#449545 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(45deg, #449545 8%,#449545 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#449545', endColorstr='#449545',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	bottom: 70px;
 }
 .theme-btn.bt-buy-now{
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1fdf61+0,88BA46+100 */
-	background: #ee3131; /* Old browsers */
-	background: -moz-linear-gradient(top,  #ee3131 0%, #fe4141 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top,  #ee3131 0%,#fe4141 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom,  #ee3131 0%,#fe4141 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ee3131', endColorstr='#fe4141',GradientType=0 ); /* IE6-9 */
+	background: #449545; /* Old browsers */
+	background: -moz-linear-gradient(top,  #449545 0%, #449545 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #449545 0%,#449545 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #449545 0%,#449545 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#449545', endColorstr='#449545',GradientType=0 ); /* IE6-9 */
 }
 .theme-btn:hover{
 	color:#fff;
@@ -10751,7 +10751,7 @@ ol.commentlist li .star-rating {
 .bg-primary-dark,
 a.bg-primary:hover,
 .rev-slider .tparrows:hover{
-	background-color:var(--primary-hover);
+	background-color:#2f6830;
 }
 
 
