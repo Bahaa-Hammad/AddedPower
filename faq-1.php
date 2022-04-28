@@ -36,9 +36,10 @@
 	<div class="page-wraper">
 		<!-- header -->
 
-		<!-- PHP -->
+		<?php include('header-style-4.html'); ?>
 
 		<!-- header END -->
+
 		<!-- Content -->
 		<div class="page-content">
 			<!-- inner page banner -->
@@ -518,9 +519,12 @@
 			<!-- contact area  END -->
 		</div>
 		<!-- Content END-->
+
 		<!-- Footer -->
 
-		<!--- PHP -->
+        <?php include('footer-fixed.html'); ?>
+
+
 		<!-- Footer END-->
 
 

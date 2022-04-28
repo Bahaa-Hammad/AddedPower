@@ -6,15 +6,16 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="keywords" content="" />
-    <meta name="author" content="" />
+    <meta name="author" content="Pseudo Program Nerds" />
+    <meta name="robots" content="" />
 
 
     <!-- FAVICONS ICON -->
-    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+    <link rel="icon" href="images/favicon.ipng" type="image/x-icon" />
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
 
     <!-- PAGE TITLE HERE -->
-    <title>AddedPower - Engine Diagnostics </title>
+    <title>AddedPower - Tire And Wheel Services </title>
 
     <!-- MOBILE SPECIFIC -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -36,21 +37,19 @@
     <div class="page-wraper">
         <!-- header -->
 
-        <!--PHP-->
+        <?php include('header-style-4.html'); ?>
 
         <!-- header END -->
         <!-- Content -->
         <div class="page-content">
             <!-- inner page banner -->
-            <div class="dlab-bnr-inr overlay-black-middle"
-                style="background-image:url(images/main-slider/engineBanner.jpg);">
+            <div class="dlab-bnr-inr overlay-black-middle" style="background-image:url(images/banner/tireBanner.jpg);">
                 <div class="container">
                     <div class="dlab-bnr-inr-entry">
-                        <h1 class="text-white">Engine Diagnostics</h1>
+                        <h1 class="text-white">Tire And Wheel Services</h1>
                         <div class="dlab-separator bg-primary"></div>
-                        <p class="text-white max-w800">Learn what is malfunctioning with your vehicle so you can make an
-                            educated decision that will put you back on the road
-                            safely and with confidence.</p>
+                        <p class="text-white max-w800">We inspect, rotate, and balance your tires, as scheduled by your
+                            manufacturer & make sure they are properly installed.</p>
                     </div>
                 </div>
             </div>
@@ -59,8 +58,8 @@
             <div class="breadcrumb-row">
                 <div class="container">
                     <ul class="list-inline">
-                        <li><a href="index.php">Home</a></li>
-                        <li>Engine Diagnostics</li>
+                        <li><a href="#">Home</a></li>
+                        <li>Tire And Wheel Services</li>
                     </ul>
                 </div>
             </div>
@@ -74,34 +73,35 @@
                             <div class="widget_services style-2 m-b40">
                                 <ul>
                                     <li><a href="all-service.html">ALL SERVICES</a> </li>
-                                    <li class="active"><a href="engine-diagnostics.html">ENGINE DIAGNOSTICS</a> </li>
+                                    <li><a href="engine-diagnostics.html">ENGINE DIAGNOSTICS</a> </li>
                                     <li><a href="lube-oil-and-filters.html">LUBE OIL AND FILTERS</a> </li>
                                     <li><a href="belts-and-hoses.html">BELTS AND HOSES</a> </li>
                                     <li><a href="air-conditioning.html">AIR CONDITIONING</a> </li>
                                     <li><a href="brake-repair.html">BRAKE REPAIR</a> </li>
-                                    <li><a href="tire-and-wheel-services.html">TIRE AND WHEEL SERVICES</a> </li>
+                                    <li class="active"><a href="tire-and-wheel-services.html">TIRE AND WHEEL
+                                            SERVICES</a> </li>
                                 </ul>
                             </div>
                             <div class="widget">
                                 <!--    <h4 class="widget-title">Get your brochures</h4>
-                                <div class="download-file">
-                                    <ul>
-                                        <li>
-                                            <a href="files/pdf-sample.pdf" target="_blank">
-                                                <span><i class="far fa-file-pdf"></i></span>
-                                                <p class="file-name">Company Brochures</p>
-                                                <i class="fas fa-download"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="files/pdf-sample.pdf" target="_blank">
-                                                <span><i class="far fa-file-pdf"></i></span>
-                                                <p class="file-name">Company Info</p>
-                                                <i class="fas fa-download"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div> -->
+                                                <div class="download-file">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="files/pdf-sample.pdf" target="_blank">
+                                                                <span><i class="far fa-file-pdf"></i></span>
+                                                                <p class="file-name">Company Brochures</p>
+                                                                <i class="fas fa-download"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="files/pdf-sample.pdf" target="_blank">
+                                                                <span><i class="far fa-file-pdf"></i></span>
+                                                                <p class="file-name">Company Info</p>
+                                                                <i class="fas fa-download"></i>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div> -->
                             </div>
                             <!--The above div is for alignment purposes-->
                             <div class="widget  widget_getintuch">
@@ -113,58 +113,47 @@
                                     <li><i class="ti-mobile"></i><strong>phone</strong><a href="tel:059 029 6833">059
                                             029 6833</a></li>
                                     <li><i class="ti-email"></i><strong>email</strong><a
-                                            href="mailto:cars.addedpower@gmail.com">cars.addedpower</a></li>
+                                            href="mailto:cars.addedpower@gmail.com">cars.addedpower</a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col-lg-9 col-md-8 col-sm-6">
                             <div class="row">
-                                <div class="col-lg-6 col-md-12">
-                                    <div class="dlab-box">
-                                        <div class="dlab-media"> <a href="#"><img
-                                                    src="images/our-services/engine_diagnostic.jpg" alt=""></a> </div>
-                                        <div class="dlab-info m-t30 ">
-                                            <h4 class="dlab-title m-t0"><a href="#">About The Service </a></h4>
-                                            <p>Is your car’s check engine light on? If it is, you can have it checked by
-                                                an ASE-certified automotive technician near
-                                                you. At AddedPower, we performed more than 20,000 engine diagnostic
-                                                services last year along. 80,000 engine
-                                                performance maintenance jobs last year alone . Our car maintenance
-                                                experts will diagnose your problem, provide repair estimates and
-                                                options, and help get you back on the road safely.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-12">
+                                <div class="col-lg-6 col-md-6 m-b30">
                                     <div class="dlab-box">
                                         <div class="dlab-media m-b30 p-b5"> <a href="#"><img
-                                                    src="images/our-services/engine_diagnostic1.jpg" alt=""></a></div>
+                                                    src="images/our-services/tireServices2.jpg" alt=""></a> </div>
                                         <div class="dlab-media"> <a href="#"><img
-                                                    src="images/our-services/engine_diagnostic2.jpg" alt=""></a></div>
-                                        <div class="dlab-info m-t30">
-                                            <h4 class="dlab-title m-t0"><a href="#">From Start To finish</a></h4>
-                                            <ul style="padding-left: 0.5cm;">
-                                                <li>A scan of your vehicle’s on board computer using state of the art
-                                                    equipment </li>
-                                                <li> Documentation of the diagnostic trouble code(s) (DTC) and code
-                                                    description(s)</li>
-                                                <li>Database check for any technical service bulletins issued by the
-                                                    vehicle manufacturer that may be related to the
-                                                    DTC(s)</li>
-                                                <li>Note - This service is only for vehicles manufactured from 1996 to
-                                                    the present</li>
+                                                    src="images/our-services/tireServices1.jpg" alt=""></a></div>
+                                    </div>
 
-                                                <li>Road test of vehicle to verify complaint (if running) </li>
-                                                <li> Visual inspection of engine compartment for obvious electrical or
-                                                    vacuum related conditions</li>
-                                                <li>Complete battery and charging system analysis</li>
-                                                <li>One or more of the following tests: fuel pressure, spark,
-                                                    compression, individual component</li>
-                                                <li>An answer to the cause of the malfunction</li>
-                                                <li>Estimate for repair</li>
-                                                <li>Courtesy vehicle inspection</li>
-                                            </ul>
-
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="dlab-box">
+                                        <div class="dlab-media"> <a href="#"><img
+                                                    src="images/our-services/tireServices.jpg" alt=""></a></div>
+                                        <div class="dlab-info m-t30 ">
+                                            <h4 class="dlab-title m-t0"><a href="#">What are the signs of worn
+                                                    tires?</a></h4>
+                                            <p>Tire tread isn’t the only indicator of problems. If your tires are more
+                                                heavily worn on the inside than the outside, or
+                                                vice versa, you may also have wheel alignment issues that won’t be
+                                                solved with a new set of tires.</p>
+                                            <p>A discount store might not be able to tell you that, but the expert auto
+                                                repair technicians at AddedPower understand how
+                                                all of the components in your car work together. Our total car care
+                                                philosophy gives you peace of mind knowing you’re
+                                                taking care of the cause of problems, not just the symptoms.</p>
+                                            <div class="dlab-info m-t30 ">
+                                                <h4 class="dlab-title m-t0"><a href="#">From Start To finish </a></h4>
+                                                <p>When you visit your neighborhood AddedPower, technicians will
+                                                    inspect, rotate, and balance your tires, as scheduled by your
+                                                    vehicle’s manufacturer. And when it's time to replace them, we will
+                                                    determine the correct size and kind of tire you need
+                                                    for the car and type of driving you do. Finally, we will make sure
+                                                    your new tires are properly installed.</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -177,9 +166,11 @@
             <!-- contact area  END -->
         </div>
         <!-- Content END-->
+
+
         <!-- Footer -->
 
-        <!--PHP-->
+        	<?php include('footer-fixed.html'); ?>
 
         <!-- Footer END-->
         <button class="scroltop fas fa-arrow-up"></button>

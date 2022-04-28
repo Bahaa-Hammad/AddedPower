@@ -35,7 +35,7 @@
     <div class="page-wraper">
         <!-- header -->
 
-        <!--Add Header By PHP-->
+        <?php include('header-style-4.html'); ?>
 
         <!-- header END -->
 
@@ -190,9 +190,10 @@
             </div>
         </div>
         <!-- Content END-->
+
         <!-- Footer -->
 
-        <!--PHP Fototer-->
+        <?php include('footer-fixed.html'); ?>
 
 
         <!-- Footer END-->

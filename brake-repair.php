@@ -37,7 +37,7 @@
     <div class="page-wraper">
         <!-- header -->
 
-        <!--PHP-->
+        <?php include('header-style-4.html'); ?>
 
         <!-- header END -->
 
@@ -176,9 +176,10 @@
             <!-- contact area  END -->
         </div>
         <!-- Content END-->
+
         <!-- Footer -->
 
-        <!--PHP-->
+        <?php include('footer-fixed.html'); ?>
 
 
         <!-- Footer END-->

@@ -37,12 +37,10 @@
         <!-- header -->
 
 
-        <!--ADD Header By PHP-->
-
-
-        <!-- main header END -->
-        </header>
+        <?php include('header-style-4.html'); ?>
+        
         <!-- header END -->
+
         <!-- Content -->
         <div class="page-content">
             <!-- inner page banner -->
@@ -289,12 +287,10 @@
             <!-- contact area  END -->
         </div>
         <!-- Content END-->
+
         <!-- Footer -->
 
-        <!-- footer top part -->
-
-
-        <!--Add Footer Using PHP-->
+        <?php include('footer-fixed.html'); ?>
 
         <!-- Footer END-->
         <button class="scroltop fas fa-arrow-up"></button>

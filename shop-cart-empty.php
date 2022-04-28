@@ -35,7 +35,7 @@
         <div id="loading-area"></div>
         <!-- header -->
 
-        <!--PHP-->
+        <?php include('header-style-4.html'); ?>
 
         <!-- header END -->
         <!-- Content -->
@@ -108,7 +108,7 @@
         <!-- Content END-->
         <!-- Footer -->
 
-        <!--PHP-->
+        <?php include('footer-fixed.html'); ?>
 
         <!-- Footer END-->
         <button class="scroltop fas fa-arrow-up"></button>

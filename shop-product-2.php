@@ -35,7 +35,7 @@
 	<div class="page-wraper">
 		<!-- header -->
 
-		<!--Add header in PHP-->
+		<?php include('header-style-4.html'); ?>
 
 		<!-- header END -->
 		<!-- Content -->
@@ -469,9 +469,17 @@
 			<!-- contact area  END -->
 		</div>
 		<!-- Content END-->
+
+
 		<!-- Footer -->
-		<!--Add footer in PHP-->
+
+
+        <?php include('footer-fixed.html'); ?>
+
+
 		<!-- Footer END-->
+
+
 		<button class="scroltop fas fa-arrow-up"></button>
 	</div>
 	<!-- JavaScript  files ========================================= -->

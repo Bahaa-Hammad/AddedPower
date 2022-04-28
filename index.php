@@ -45,77 +45,12 @@
 <body id="bg">
     <div id="loading-area"></div>
     <div class="page-wraper">
+
         <!-- header -->
 
-        <header class="site-header header header-style-5 mo-left">
-            <!-- top bar -->
-            <div class="top-bar">
-                <div class="container">
-                    <div class="row d-flex justify-content-between">
-                        <div class="dlab-topbar-left"> </div>
-                        <div class="dlab-topbar-right">
-                            <ul class="social-bx list-inline float-end">
-                                <li><a class="fab fa-instagram" href="https://www.instagram.com/addedpower_ksa/?hl=en"
-                                        target="blank"></a>
-                                </li>
-                                <li><a class="fab fa-google" href="mailto:cars.addedpower@gmail.com" target="blank"></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- top bar END-->
-            <!-- main header -->
-            <div class="sticky-header header-curve main-bar-wraper navbar-expand-lg">
-                <div class="main-bar clearfix ">
-                    <div class="container clearfix">
-                        <!-- website logo -->
-                        <div class="logo-header logo-white mostion"><a href="index.html"><img src="images/logo.png"
-                                    width="193" height="89" alt="AddedPowerLogo"></a>
-                        </div>
-                        <!-- nav toggle button -->
-                        <button class="navbar-toggler collapsed navicon justify-content-end" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </button>
-                        <!-- extra nav -->
-                        <div class="extra-nav">
-                            <div class="extra-cell">
-                                <a href="sign-up.html"><button class="site-button m-r15" type="button">Sign
-                                        up</button></a>
-                                <a href="login-1.html"><button class="site-button m-r15" type="button">Sign
-                                        in</button></a>
-                            </div>
-                        </div>
-                        <!-- main nav -->
-                        <div class="header-nav navbar-collapse collapse justify-content-end" id="navbarNavDropdown">
-                            <ul class="nav navbar-nav">
-                                <li class="active"> <a href="index.html">Home</a> </li>
+        <?php include('header-style-4.html'); ?>
 
-                                <li> <a href="about-2.html">About</a> </li>
-
-                                <li> <a href="all-service.html">Services</a></li>
-
-                                <li> <a href="shop-product-2.html">Shop</a></li>
-
-                                <li> <a href="#OurProcess">Our Process</a> </li>
-
-                                <li> <a href="faq-1.html">FAQ</a> </li>
-
-                                <li> <a href="contact.html">Contact us</a> </li>
-
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- header END -->
+        <!-- header END -->
             <!-- Content -->
             <div class="page-content">
                 <!-- Slider -->
@@ -1051,129 +986,13 @@
                     <!-- Client logo END -->
                 </div>
                 <!-- Content END-->
+
+
                 <!-- Footer -->
-                <!--Add Footer Using PHP-->
 
-                <footer class="site-footer">
-                    <!-- newsletter part -->
-                    <div class="bg-primary dlab-newsletter">
-                        <div class="container equal-wraper">
-                            <form class="dzSubscribe" action="script/mailchamp.php" method="post">
-                                <div class="row position-relative">
-                                    <div class="col-lg-4 col-md-4 col-sm-12">
-                                        <div class="icon-bx-wraper equal-col p-t30 p-b20 left">
-                                            <div class="icon-lg text-white radius">
-                                                <i class="ti-email"></i>
-                                            </div>
-                                            <div class="icon-content"> <strong
-                                                    class="text-black text-uppercase font-18">Subscribe</strong>
-                                                <h2 class="dlab-tilte text-uppercase">Our Newsletter</h2>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-4 col-sm-12">
-                                        <div class="dzSubscribeMsg"></div>
-                                        <div class="input-group equal-col p-t40  p-b10">
-                                            <input name="dzEmail" required placeholder="Email address"
-                                                required="required" class="form-control" type="text">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-3 col-sm-12 offset-lg-1 offset-md-1">
-                                        <div class="equal-col p-t40 p-b10 skew-subscribe">
-                                            <button name="submit" value="Submit" type="submit"
-                                                class="site-button-secondry button-skew z-index1">
-                                                <span>Subscribe</span><i class="fas fa-angle-right"></i> </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <!-- footer top part -->
-                    <div class="footer-top">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-4 col-md-6 col-sm-6 footer-col-4">
-                                    <div class="widget widget_about">
-                                        <div class="logo-footer logo-white"><img src="images/AddedPowerLogo.png" alt="">
-                                        </div>
-                                        <p><strong>AddedPower</strong> We take care of all your auto-repair needs, from
-                                            brakes,
-                                            tires, oil changes to periodic maintenance and car washes and polishing.</p>
-                                        <ul class="dlab-social-icon dez-border">
-                                            <li><a class="fab fa-instagram"
-                                                    href="https://www.instagram.com/addedpower_ksa/?hl=en"
-                                                    target="blank"></a>
-                                            <li><a class="fab fa-google" href="mailto:cars.addedpower@gmail.com"
-                                                    target="blank"></a>
-                                            </li>
+                <?php include('footer-fixed.html'); ?>
 
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-4 col-md-3 col-sm-3 footer-col-4">
-                                    <div class="widget widget_services">
-                                        <h4 class="m-b15 text-uppercase">Our services</h4>
-                                        <div class="dlab-separator-outer m-b10">
-                                            <div class="dlab-separator bg-white style-skew"></div>
-                                        </div>
-                                        <ul>
-                                            <li><a href="engine-diagnostics.html">Engine Diagnostics</a></li>
-                                            <li><a href="lube-oil-and-filters.html">Lube, Oil and Filters</a></li>
-                                            <li><a href="belts-and-hoses.html">Belts and Hoses</a></li>
-                                            <li><a href="air-conditioning.html">Air Conditioning</a></li>
-                                            <li><a href="brake-repair.html">Brake Repair</a></li>
-                                            <li><a href="tire-and-wheel-services.html">Tire And Wheel Services</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-3 col-sm-3 footer-col-4">
-                                    <div class="widget widget_getintuch">
-                                        <h4 class="m-b15 text-uppercase">Contact us</h4>
-                                        <div class="dlab-separator-outer m-b10">
-                                            <div class="dlab-separator bg-white style-skew"></div>
-                                        </div>
-                                        <ul>
-                                            <li><i class="ti-location-pin"></i><strong>address</strong> Amr Bin Ishaq,
-                                                Al
-                                                Faisaliyyah, Riyadh 12892</li>
-                                            <li><i class="ti-mobile"></i><strong>phone</strong><a
-                                                    href="tel:059 029 6833">059
-                                                    029 6833</a></li>
-                                            <li><i class="ti-email"></i><strong>email</strong> <a
-                                                    href="mailto:cars.addedpower@gmail.com">
-                                                    cars.addedpower@gmail.com</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- footer bottom part -->
-                    <div class="footer-bottom footer-line">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-4 col-md-4 text-left">
-                                    <span>© Copyright 2022</span>
-                                </div>
-                                <div class="col-lg-4 col-md-4 text-center">
-                                    <span> Design With <i class="ti-heart text-primary heart"></i> By<a href=""
-                                            target="_blank">Pseudo Program Nerds</a> </span>
-                                </div>
-                                <div class="col-lg-4 col-md-4 text-right">
-                                    <a href="about-2.html"> About</a>
-                                    <a href="faq-1.html"> FAQs</a>
-                                    <a href="contact.html"> Contact</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
-
-
-
+                
                 <!-- Footer END-->
                 <!-- scroll top button -->
                 <button class="scroltop fas fa-arrow-up style5"></button>

@@ -36,10 +36,14 @@
 	<div class="page-wraper">
 		<div id="loading-area"></div>
 		<!-- header -->
-		<!--Add header in PHP-->
-		<!-- top bar -->
+
+
+		<?php include('header-style-4.html'); ?>
+
 
 		<!-- header END -->
+
+
 		<!-- Content -->
 		<div class="page-content bg-white">
 			<!-- inner page banner -->
@@ -660,9 +664,17 @@
 			</div>
 		</div>
 		<!-- Content END-->
+
+
 		<!-- Footer -->
-		<!--Add footer in PHP-->
+
+
+        <?php include('footer-fixed.html'); ?>
+
+
 		<!-- Footer END-->
+
+
 		<button class="scroltop fas fa-arrow-up"></button>
 	</div>
 	<!-- JavaScript  files ========================================= -->

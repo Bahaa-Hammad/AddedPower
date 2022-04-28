@@ -37,9 +37,10 @@
     <div class="page-wraper">
         <!-- header -->
 
-        <!--PHP-->
+        <?php include('header-style-4.html'); ?>
 
         <!-- header END -->
+
         <!-- Content -->
         <div class="page-content">
 
@@ -70,7 +71,7 @@
 
         <!-- Footer -->
 
-        <!--PHP-->
+        <?php include('footer-fixed.html'); ?>
 
         <!-- Footer END-->
         <!-- scroll top button -->

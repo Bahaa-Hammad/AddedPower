@@ -44,7 +44,7 @@
 		<!-- header -->
 
 
-		<!--Add header in PHP-->
+		<?php include('header-style-4.html'); ?>
 
 
 		<!-- header END -->
@@ -359,7 +359,7 @@
 	<!-- Footer -->
 
 
-	<!--Add footer in PHP-->
+    <?php include('footer-fixed.html'); ?>
 
 
 	<!-- Footer END-->

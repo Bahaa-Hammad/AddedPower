@@ -38,9 +38,7 @@
 		<!-- header -->
 
 
-		<!--Add PHP-->
-
-		<!-- main header END -->
+		<?php include('header-style-4.html'); ?>
 
 		<!-- header END -->
 
@@ -156,9 +154,11 @@
 			<!-- contact area  END -->
 		</div>
 		<!-- Content END-->
+
+
 		<!-- Footer -->
 
-		<!-- ADD PHP -->
+        <?php include('footer-fixed.html'); ?>
 
 
 		<!-- Footer END-->
