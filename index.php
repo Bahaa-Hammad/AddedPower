@@ -988,15 +988,17 @@
                 <!-- Content END-->
 
 
+                <!-- scroll top button -->
+                <button class="scroltop fas fa-arrow-up style5"></button>
+            </div>
+
+            
                 <!-- Footer -->
 
                 <?php include('footer-fixed.html'); ?>
 
                 
                 <!-- Footer END-->
-                <!-- scroll top button -->
-                <button class="scroltop fas fa-arrow-up style5"></button>
-            </div>
 
             <!-- JavaScript  files ========================================= -->
             <script src="js/jquery.min.js"></script><!-- JQUERY.MIN JS -->
