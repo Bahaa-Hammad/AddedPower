@@ -45,7 +45,7 @@
             <div class="login-form">
                 <div class="tab-content nav">
                     <div id="login" class="tab-pane active text-center">
-                        <form class="p-a30 dlab-form">
+                        <form method="post" action="login.php" class="p-a30 dlab-form">
                             <h3 class="form-title m-t0">Sign In</h3>
                             <div class="dlab-separator-outer m-b5">
                                 <div class="dlab-separator bg-primary style-liner"></div>
@@ -60,7 +60,8 @@
                                     type="password" />
                             </div>
                             <div class="form-group text-left">
-                                <button class="site-button m-r5 dz-xs-flex">Sign In</button>
+                                <button value="submit" type="submit" class="site-button m-r5 dz-xs-flex">Sign
+                                    In</button>
                                 <div class="m-t20">
                                     <label class="m-b0">
                                         <input id="check1" type="checkbox">

@@ -43,27 +43,28 @@
                 </a>
             </div>
             <div id="developement-1" class="tab-pane login-form">
-                <form class="p-a30 dlab-form text-center text-center">
+                <form action="signup.php" method="post" class="p-a30 dlab-form text-center text-center"
+                    autocomplete="on">
                     <h3 class="form-title m-t0">Sign Up</h3>
                     <div class="dlab-separator-outer m-b5">
                         <div class="dlab-separator bg-primary style-liner"></div>
                     </div>
                     <p>Enter your personal details below: </p>
                     <div class="form-group">
-                        <input name="dzName" required="" class="form-control" placeholder="Full Name" type="text" />
+                        <input name="name" required="" class="form-control" placeholder="Full Name" type="text" />
                     </div>
                     <div class="form-group">
-                        <input name="dzName" required="" class="form-control" placeholder="User Name" type="text" />
+                        <input name="uId" required="" class="form-control" placeholder="User Name" type="text" />
                     </div>
                     <div class="form-group">
-                        <input name="dzName" required="" class="form-control" placeholder="Email Id" type="text" />
+                        <input name="email" required="" class="form-control" placeholder="Email Id" type="text" />
                     </div>
 
                     <div class="form-group">
-                        <input name="dzName" required="" class="form-control" placeholder="Password" type="password" />
+                        <input name="pwd" required="" class="form-control" placeholder="Password" type="password" />
                     </div>
                     <div class="">
-                        <input name="dzName" required="" class="form-control" placeholder="Re-type Your Password"
+                        <input name="pwdRepeat" required="" class="form-control" placeholder="Re-type Your Password"
                             type="password" />
                     </div>
                     <div class="m-b30">
@@ -73,7 +74,7 @@
                     </div>
                     <div class="form-group text-left ">
                         <a class="site-button outline gray" data-bs-toggle="tab" href="#login">Back</a>
-                        <button class="site-button float-end">Submit</button>
+                        <input type="submit" name="submit" value="submit" class="site-button float-end">Submit</button>
                     </div>
                 </form>
             </div>

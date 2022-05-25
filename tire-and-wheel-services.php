@@ -37,7 +37,7 @@
     <div class="page-wraper">
         <!-- header -->
 
-        <?php include('header-style-4.html'); ?>
+        <?php include('header-style-4.php'); ?>
 
         <!-- header END -->
         <!-- Content -->

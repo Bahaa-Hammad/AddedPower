@@ -36,7 +36,7 @@
 		<div id="loading-area"></div>
 		<!-- header -->
 
-		<?php include('header-style-4.html'); ?>
+		<?php include('header-style-4.php'); ?>
 
 		<!-- header END -->
 

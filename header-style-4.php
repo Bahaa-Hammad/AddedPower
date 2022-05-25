@@ -1,3 +1,9 @@
+<?php
+
+// Include the session on the header as its included in every page
+
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -72,12 +78,26 @@
                         </button>
                         <!-- extra nav -->
                         <div class="extra-nav">
-                            <div class="extra-cell">
-                                <a href="login-1.html"><button class="site-button m-r15"
-                                        type="button">Signin</button></a>
+                            <!--User Logedin-->
+
+                            <?php
+
+                            if(isset($_SESSION['useruid'])){
+                                echo ' <div class="extra-cell">
+                                <a href="logout.php"><button class="site-button m-r15"
+                                        type="button">Logout</button></a>
+                            </div>' ;
+                            }else{
+                                echo '<div class="extra-cell">
                                 <a href="sign-up.html"><button class="site-button m-r15"
+                                        type="button">Signup</button></a>
+                                <a href="login-1.html"><button class="site-button m-r15"
                                         type="button">Login</button></a>
-                            </div>
+                            </div>';
+                            }
+
+                            ?>
+                           
                         </div>
                         <!-- main nav -->
                         <div class="header-nav navbar-collapse collapse justify-content-end" id="navbarNavDropdown">

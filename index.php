@@ -48,7 +48,7 @@
         <!-- header -->
 
 
-        <?php include('header-style-4.html'); ?>
+        <?php include('header-style-4.php'); ?>
 
 
         
@@ -424,7 +424,7 @@
                                         <div class="icon-md text-primary m-b20"> <a href="#" class="icon-cell"><i
                                                     class="ti-time"></i></a> </div>
                                         <h3 class="dlab-tilte">Schedule Appointment</h3>
-                                        <a href="appointment.html" class="site-button">Schedule Appointment</a>
+                                        <a href="appointment.php" class="site-button">Schedule Appointment</a>
                                     </div>
                                 </div>
                             </div>
