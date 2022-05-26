@@ -86,7 +86,7 @@ session_start();
                                 echo ' <div class="extra-cell">
                                 <a href="logout.php"><button class="site-button m-r15"
                                         type="button">Logout</button></a>
-                            </div>' ;
+                            </div>';
                             }else{
                                 echo '<div class="extra-cell">
                                 <a href="sign-up.html"><button class="site-button m-r15"

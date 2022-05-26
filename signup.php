@@ -19,28 +19,28 @@ if (isset($_POST["submit"])){
 
     if(emptyInputSignup($name, $email,$username,$pwd,$pwdRepeat) !== false){
         // Send the user back with the error attached to the url using ?error=
-        header("location : sign-up.html?error=emptyinput"); 
+        header("location: sign-up.html?error=emptyinput"); 
         exit(); // Stop the script 
 
     }
 
      if(invalidUid($username) !== false){
         // Send the user back with the error attached to the url using ?error=
-        header("location : sign-up.html?error=invaliduid"); 
+        header("location: sign-up.html?error=invaliduid"); 
         exit(); // Stop the script 
 
     }
 
      if(invalidEmail($email) !== false){
         // Send the user back with the error attached to the url using ?error=
-        header("location : sign-up.html?error=invalidemail"); 
+        header("location: sign-up.html?error=invalidemail"); 
         exit(); // Stop the script 
 
     }
 
      if(pwdMatchTwice($pwd,$pwdRepeat) !== false){
         // Send the user back with the error attached to the url using ?error=
-        header("location : sign-up.html?error=pwdNotMatch"); 
+        header("location: sign-up.html?error=pwdNotMatch"); 
         exit(); // Stop the script 
 
     }
@@ -48,7 +48,7 @@ if (isset($_POST["submit"])){
      // Must put db connection to check db data
      if(uidTaken($conn,$username,$email) !== false){
         // Send the user back with the error attached to the url using ?error=
-        header("location : sign-up.html?error=takenID"); 
+        header("location: sign-up.html?error=takenID"); 
         exit(); // Stop the script 
 
     }
@@ -57,13 +57,14 @@ if (isset($_POST["submit"])){
 
     // Creating user account
     createUser($conn,$name, $email,$username,$pwd);
-    header("location : index.html");
+    header("location: index.html");
     exit(); // Stop the script
 }
 else { // if the url was not accessed throgh the form
-    header("location : sign-up.html");
+    header("location: sign-up.html");
     exit(); // Stop the script
 
 }
+
 
 

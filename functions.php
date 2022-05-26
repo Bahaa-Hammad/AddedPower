@@ -135,7 +135,7 @@ function emptyInputLogin($username,$pwd){
     
     $check;
 
-    if(empty($username)|| empty($pwd)){
+    if(empty($username) || empty($pwd)){
         $check = true;
     }
     else{
@@ -157,7 +157,7 @@ function loginUser($conn,$username,$pwd){
 
     // If user DNE 
     if($uidTaken === false){
-        header("location: login-1.html?error=wrongLogin");
+        header("location: login-1.html?error=userDbNull");
         exit();
     }
 
@@ -175,12 +175,12 @@ function loginUser($conn,$username,$pwd){
     */
 
 
-    $pwdHashed = $uidTaken['userPwd'];
+    $pwdHashed = $uidTaken['usersPwd'];
     $checkPwd = password_verify($pwd,$pwdHashed);
 
     // Password DOES NOT Match:
     if($checkPwd === false){
-        header("location: login-1.html?error=wrongLogin");
+        header("location: login-1.html?error=pwdWrong");
         exit();
     } else if($checkPwd === true){ //Password Match: Sessions
 
@@ -189,8 +189,8 @@ function loginUser($conn,$username,$pwd){
 
         // initialize sessions superglobals variables:
         
-        $_SESSION["userid"] = $uidTaken["usersId"];
-        $_SESSION["useruid"] = $uidTaken["usersUId"];
+        $_SESSION["userid"] = $uidTaken['usersId'];
+        $_SESSION["useruid"] = $uidTaken["usersUid"];
         header("location: index.php");
         exit();
     }
