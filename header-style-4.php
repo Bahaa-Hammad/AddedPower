@@ -65,7 +65,7 @@ session_start();
                 <div class="main-bar clearfix ">
                     <div class="container clearfix">
                         <!-- website logo -->
-                        <div class="logo-header logo-white mostion"><a href="index.html"><img src="images/logo.png"
+                        <div class="logo-header logo-white mostion"><a href="index.php"><img src="images/logo.png"
                                     width="193" height="89" alt="AddedPowerLogo"></a>
                         </div>
                         <!-- nav toggle button -->
