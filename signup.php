@@ -7,8 +7,10 @@ if (isset($_POST["submit"])){
 
     //User signup form Info
     
-    $name = $_POST["name"];
+    $fname = $_POST["fname"];
+    $lname = $_POST["lname"];
     $email = $_POST["email"];
+    $tel = $_POST["tel"];
     $username = $_POST["uId"];
     $pwd = $_POST["pwd"];
     $pwdRepeat = $_POST["pwdRepeat"];
@@ -17,7 +19,7 @@ if (isset($_POST["submit"])){
     require_once 'dbConn.php';
     require_once 'functions.php'; // php functions for handeling errors and utility functions 
 
-    if(emptyInputSignup($name, $email,$username,$pwd,$pwdRepeat) !== false){
+    if(emptyInputSignup($fname,$lname,$email,$tel,$username,$pwd,$pwdRepeat) !== false){
         // Send the user back with the error attached to the url using ?error=
         header("location: sign-up.html?error=emptyinput"); 
         exit(); // Stop the script 
@@ -56,7 +58,7 @@ if (isset($_POST["submit"])){
 
 
     // Creating user account
-    createUser($conn,$name, $email,$username,$pwd);
+    createUser($conn,$fname,$lname,$email,$tel,$username,$pwd);
     header("location: index.html");
     exit(); // Stop the script
 }

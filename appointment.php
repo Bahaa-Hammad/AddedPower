@@ -1,49 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<!-- META -->
-	<meta charset="utf-8">
+	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="keywords" content="" />
-	<meta name="author" content="Pseudo Program Nerds" />
-	<meta name="robots" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+	<!-- Appointment Page Stylesheet -->
+	<link rel="stylesheet" href="Design/css/appointment-page-style.css">
 
-	<!-- FAVICONS ICON -->
-	<link rel="icon" href="images/favicon.png" type="image/x-icon" />
-	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+	<!-- EXTERNAL CSS LINKS -->
 
-	<!-- PAGE TITLE HERE -->
-	<title>AddedPower - Appointment</title>
+	<link rel="stylesheet" type="text/css" href="Design/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="Design/fonts/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="Design/css/main.css">
+	<link rel="stylesheet" type="text/css" href="Design/css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="Design/css/barber-icons.css">
 
-	<!-- MOBILE SPECIFIC -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<!--[if lt IE 9]>
-		<script src="js/html5shiv.min.js"></script>
-		<script src="js/respond.min.js"></script>
-	<![endif]-->
-
-	<!-- STYLESHEETS -->
+	
 	<link rel="stylesheet" type="text/css" href="css/style.min.css">
 	<link rel="stylesheet" type="text/css" href="css/templete.min.css">
 	<link class="skin" rel="stylesheet" type="text/css" href="css/skin/skin-1.css">
+	
+	<!-- GOOGLE FONTS -->
 
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+
+	<title>AddedPower - Appointment</title>
 </head>
 
-<body id="bg">
-	<div id="loading-area"></div>
-	<div class="page-wraper">
-		<!-- header -->
+<!-- PHP INCLUDES -->
 
+<?php
+    include "connect.php";
+    include "Includes/functions/functions.php";
+	session_start();
+?>
 
-		<?php include('header-style-4.php'); ?>
+<body>
+	
+<!-- BOOKING APPOINTMENT SECTION -->
 
-		<!-- header END -->
+	<?php 
+        if(isset($_SESSION['useruid']) === false){
 
-		<!-- Content -->
-		<div class="page-content">
+		header("location: login-1.html?error=mustLoginToAppo");
+        exit();
+		}
+	?>
+<div class="page-content">
 
 			<div class="dlab-bnr-inr overlay-black-middle"
 				style="background-image:url(images/background/Appointments-bg.jpg);">
@@ -64,126 +70,301 @@
 				</div>
 			</div>
 			<!-- Breadcrumb  row END -->
-			<!-- contact area -->
+
+<section class="booking_section">
+	<div class="container">
+
+		<?php
+
+            if(isset($_POST['submit_book_appointment_form']) && $_SERVER['REQUEST_METHOD'] === 'POST')
+            {
+            	// Selected SERVICES
+
+                $selected_services = $_POST['selected_services'];
+
+                // Selected EMPLOYEE
+
+                $selected_employee = $_POST['selected_employee'];
+
+                // Selected DATE+TIME
+
+                $selected_date_time = explode(' ', $_POST['desired_date_time']);
+
+                $date_selected = $selected_date_time[0];
+                $start_time = $date_selected." ".$selected_date_time[1];
+                $end_time = $date_selected." ".$selected_date_time[2];
 
 
-			<!-- Appointment -->
+                //Client Details (From Users table)
 
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12 dlab-we-best ">
-						<div
-							class="p-lr20 p-tb40 m-t30 dlab-appoinment-now-form tp-light  clearfix bg-dark border-1 text-black">
-							<form method="post" class="dzForm" action="script/contact.php">
-								<input value="Appoinment" name="dzToDo" type="hidden">
-								<div class="row">
-									<div class="col-lg-12 text-center text-white m-b10">
-										<h2 class=" m-t0 m-b10 ">Make An Appoinment</h2>
-										<div class="dlab-separator-outer">
-											<div class="dlab-separator bg-primary"></div>
-										</div>
-									</div>
-									<div class="col-lg-12">
-										<div class="form-group">
-											<input name="dzName" class="form-control" placeholder="Name" type="text">
-										</div>
-									</div>
-									<div class="col-lg-12">
-										<div class="form-group">
-											<input name="dzEmail" class="form-control" placeholder="Email" type="text">
-										</div>
-									</div>
-									<div class="col-lg-12">
-										<div class="form-group">
-											<input name="dzOther[date]" class="form-control" placeholder="Select Date"
-												type="date">
-										</div>
-									</div>
-									<div class="col-lg-12">
-										<div class="form-group">
-											<select class="bs-select-hidden" name="dzOther[service]">
-												<option value="">Engine Diagnostics</option>
-												<option value="">Lube Oil and Filters</option>
-												<option value="">Belts and Hoses</option>
-												<option value="">Air Conditioning</option>
-												<option value="">Brake Repair</option>
-												<option value="">Tire and Wheel Services</option>
-											</select>
-										</div>
-									</div>
-									<div class="col-lg-12">
-										<div class="form-group">
-											<div class="input-group">
-												<textarea name="dzMessage" rows="4" class="form-control" required=""
-													placeholder="Text messege..."></textarea>
+                $client_first_name = test_input($_SESSION['usersFirstName']);
+                $client_last_name = test_input($_SESSION['usersLastName']);
+                $client_email = test_input($_SESSION['usersEmail']);
+                $client_phone_number = test_input($_SESSION['usersPhone']);
+
+                $con->beginTransaction();
+
+                try
+                {
+					// Check If the client's email already exist in our database
+					$stmtCheckClient = $con->prepare("SELECT * FROM clients WHERE client_email = ?");
+                    $stmtCheckClient->execute(array($client_email));
+					$client_result = $stmtCheckClient->fetch();
+					$client_count = $stmtCheckClient->rowCount();
+
+					if($client_count > 0)
+					{
+						$client_id = $client_result["client_id"];
+					}
+					else
+					{
+						$stmtgetCurrentClientID = $con->prepare("SELECT AUTO_INCREMENT FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'addedPower' AND TABLE_NAME = 'clients'");
+            
+						$stmtgetCurrentClientID->execute();
+						$client_id = $stmtgetCurrentClientID->fetch();
+
+						$stmtClient = $con->prepare("insert into clients(first_name,last_name,phone_number,client_email) 
+									values(?,?,?,?)");
+						$stmtClient->execute(array($client_first_name,$client_last_name,$client_phone_number,$client_email));
+					}
+
+
+                    
+
+                    $stmtgetCurrentAppointmentID = $con->prepare("SELECT AUTO_INCREMENT FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'addedPower' AND TABLE_NAME = 'appointments'");
+            
+                    $stmtgetCurrentAppointmentID->execute();
+                    $appointment_id = $stmtgetCurrentAppointmentID->fetch();
+                    
+                    $stmt_appointment = $con->prepare("insert into appointments(date_created, client_id, employee_id, start_time, end_time_expected ) values(?, ?, ?, ?, ?)");
+                    $stmt_appointment->execute(array(Date("Y-m-d H:i"),$client_id[0],$selected_employee,$start_time,$end_time));
+
+                    foreach($selected_services as $service)
+                    {
+                        $stmt = $con->prepare("insert into services_booked(appointment_id, service_id) values(?, ?)");
+                        $stmt->execute(array($appointment_id[0],$service));
+                    }
+                    
+                    echo "<div class = 'alert alert-success'>";
+                        echo "Great! Your appointment has been created successfully.";
+                    echo "</div>";
+
+                    $con->commit();
+                }
+                catch(Exception $e)
+                {
+                    $con->rollBack();
+                    echo "<div class = 'alert alert-danger'>"; 
+                        echo $e->getMessage();
+                    echo "</div>";
+                }
+            }
+
+        ?>
+
+		<!-- RESERVATION FORM -->
+
+		
+
+		<form method="post" id="appointment_form" action="appointment.php">
+		
+			<!-- SELECT SERVICE -->
+
+			<div class="select_services_div tab_reservation" id="services_tab">
+
+				<!-- ALERT MESSAGE -->
+
+				<div class="alert alert-danger" role="alert" style="display: none">
+					Please, select at least one service!
+				</div>
+
+				<div class="text_header">
+					<span>
+						1. Choice of services
+					</span>
+				</div>
+
+				<!-- SERVICES TAB -->
+				
+				<div class="items_tab">
+        			<?php
+        				$stmt = $con->prepare("Select * from services");
+                    	$stmt->execute();
+                    	$rows = $stmt->fetchAll();
+
+                    	foreach($rows as $row)
+                    	{
+                        	echo "<div class='itemListElement'>";
+                            	echo "<div class = 'item_details'>";
+                                	echo "<div>";
+                                    	echo $row['service_name'];
+                                	echo "</div>";
+                                	echo "<div class = 'item_select_part'>";
+                                		echo "<span class = 'service_duration_field'>";
+                                    		echo $row['service_duration']." min";
+                                    	echo "</span>";
+                                    	echo "<div class = 'service_price_field'>";
+    										echo "<span style = 'font-weight: bold;'>";
+                                    			echo $row['service_price']."$";
+                                    		echo "</span>";
+                                    	echo "</div>";
+                                    ?>
+                                    	<div class="select_item_bttn">
+                                    		<div class="btn-group-toggle" data-toggle="buttons">
+												<label class="service_label item_label btn btn-warning">
+													<input type="checkbox"  name="selected_services[]" value="<?php echo $row['service_id'] ?>" autocomplete="off">Select
+												</label>
 											</div>
-										</div>
-									</div>
-									<div class="col-lg-12">
-										<div class="form-group">
-											<div class="input-group">
-												<div class="g-recaptcha" data-theme="dark"
-													data-sitekey="!-- Put reCaptcha Site Key -->"
-													data-callback="verifyRecaptchaCallback"
-													data-expired-callback="expiredRecaptchaCallback">
-												</div>
-												<input class="form-control d-none" style="display:none;"
-													data-recaptcha="true" required
-													data-error="Please complete the Captcha">
-											</div>
-										</div>
-									</div>
-									<div class="col-lg-12 text-center">
-										<div class="dzFormMsg "></div>
-										<button name="Reset" value="Reset" type="reset"
-											class="site-button skew-secondry m-r10">
-											<span>Reset</span>
-										</button>
-										<button name="submit" type="submit" value="Submit"
-											class="site-button skew-secondry">
-											<span>Submit</span>
-										</button>
-									</div>
-								</div>
-							</form>
-						</div>
+                                    	</div>
+                                    <?php
+                                	echo "</div>";
+                            	echo "</div>";
+                        	echo "</div>";
+                    	}
+            		?>
+    			</div>
+			</div>
+
+			<!-- SELECT EMPLOYEE -->
+
+			<div class="select_employee_div tab_reservation" id="employees_tab">
+
+				<!-- ALERT MESSAGE -->
+
+				<div class="alert alert-danger" role="alert" style="display: none">
+					Please, select your employee!
+				</div>
+
+				<div class="text_header">
+					<span>
+						2. Choice of employee
+					</span>
+				</div>
+
+				<!-- EMPLOYEES TAB -->
+				
+				<div class="btn-group-toggle" data-toggle="buttons">
+					<div class="items_tab">
+        				<?php
+        					$stmt = $con->prepare("Select * from employees");
+                    		$stmt->execute();
+                    		$rows = $stmt->fetchAll();
+
+                    		foreach($rows as $row)
+                    		{
+                        		echo "<div class='itemListElement'>";
+                            		echo "<div class = 'item_details'>";
+                                		echo "<div>";
+                                    		echo $row['first_name']." ".$row['last_name'];
+                                		echo "</div>";
+                                		echo "<div class = 'item_select_part'>";
+                                    ?>
+                                    		<div class="select_item_bttn">
+                                    			<label class="item_label btn btn-warning active">
+													<input type="radio" class="radio_employee_select" name="selected_employee" value="<?php echo $row['employee_id'] ?>">Select
+												</label>	
+                                    		</div>
+                                    <?php
+                                		echo "</div>";
+                            		echo "</div>";
+                        		echo "</div>";
+                    		}
+            			?>
+    				</div>
+    			</div>
+			</div>
+
+
+			<!-- SELECT DATE TIME -->
+
+			<div class="select_date_time_div tab_reservation" id="calendar_tab">
+
+				<!-- ALERT MESSAGE -->
+				
+		        <div class="alert alert-danger" role="alert" style="display: none">
+		          Please, select time!
+		        </div>
+
+				<div class="text_header">
+					<span>
+						3. Choice of Date and Time
+					</span>
+				</div>
+				
+				<div class="calendar_tab" style="overflow-x: auto;overflow-y: visible;" id="calendar_tab_in">
+					<div id="calendar_loading">
+						<img src="Design/images/ajax_loader_gif.gif" style="display: block;margin-left: auto;margin-right: auto;">
 					</div>
 				</div>
-				<!-- Appointment END -->
+
 			</div>
-			<!-- contact area  END -->
-		</div>
-		<!-- Content END-->
 
 
-		<!-- Footer -->
+			<!-- CLIENT DETAILS   (Replaced By users Account info, taken from session[])
 
-        <?php include('footer-fixed.html'); ?>
+			<div class="client_details_div tab_reservation" id="client_tab">
+
+                <div class="text_header">
+                    <span>
+                        4. Client Details
+                    </span>
+                </div>
+
+                <div>
+                    <div class="form-group colum-row row">
+                        <div class="col-sm-6">
+                            <input type="text" name="client_first_name" id="client_first_name" class="form-control" placeholder="First Name">
+							<span class = "invalid-feedback">This field is required</span>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="text" name="client_last_name" id="client_last_name" class="form-control" placeholder="Last Name">
+							<span class = "invalid-feedback">This field is required</span>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="email" name="client_email" id="client_email" class="form-control" placeholder="E-mail">
+							<span class = "invalid-feedback">Invalid E-mail</span>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="text"  name="client_phone_number" id="client_phone_number" class="form-control" placeholder="Phone number">
+							<span class = "invalid-feedback">Invalid phone number</span>
+						</div>
+                    </div>
+        
+                </div>
+            </div>
+			-->
 
 
-		<!-- Footer END-->
+			
 
+			<!-- NEXT AND PREVIOUS BUTTONS -->
 
-		<!-- scroll top button -->
-		<button class="scroltop fas fa-arrow-up"></button>
+			<div style="overflow:auto;padding: 30px 0px;">
+    			<div style="float:right;">
+    				<input type="hidden" name="submit_book_appointment_form">
+      				<button type="button" id="prevBtn"  class="next_prev_buttons" style="background-color: #bbbbbb;"  onclick="nextPrev(-1)">Previous</button>
+      				<button type="button" id="nextBtn" class="next_prev_buttons" onclick="nextPrev(1)">Next</button>
+    			</div>
+  			</div>
+
+  			<!-- Circles which indicates the steps of the form: -->
+
+  			<div style="text-align:center;margin-top:40px;">
+    			<span class="step"></span>
+    			<span class="step"></span>
+    			<span class="step"></span>
+  			</div>
+
+		</form>
 	</div>
-	<!-- JavaScript  files ========================================= -->
-	<script src="js/jquery.min.js"></script><!-- JQUERY.MIN JS -->
-	<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script><!-- BOOTSTRAP.MIN JS -->
-	<script src="plugins/bootstrap-select/bootstrap-select.min.js"></script><!-- FORM JS -->
-	<script src="plugins/bootstrap-touchspin/jquery.bootstrap-touchspin.js"></script><!-- FORM JS -->
-	<script src="plugins/magnific-popup/magnific-popup.js"></script><!-- MAGNIFIC POPUP JS -->
-	<script src="plugins/counter/waypoints-min.js"></script><!-- WAYPOINTS JS -->
-	<script src="plugins/counter/counterup.min.js"></script><!-- COUNTERUP JS -->
-	<script src="plugins/imagesloaded/imagesloaded.js"></script><!-- IMAGESLOADED -->
-	<script src="plugins/masonry/masonry-3.1.4.js"></script><!-- MASONRY -->
-	<script src="plugins/masonry/masonry.filter.js"></script><!-- MASONRY -->
-	<script src="plugins/owl-carousel/owl.carousel.js"></script><!-- OWL SLIDER -->
-	<script src="js/custom.min.js"></script><!-- CUSTOM FUCTIONS  -->
-	<script src="js/dz.carousel.min.js"></script><!-- SORTCODE FUCTIONS  -->
-
-	<script src="js/dz.ajax.js"></script><!-- CONTACT JS -->
-
+</section>
 </body>
-
 </html>
+
+
+<!-- INCLUDE JS SCRIPTS -->
+
+<script src="Design/js/jquery.min.js"></script>
+<script src="Design/js/bootstrap.min.js"></script>
+<script src="Design/js/bootstrap.bundle.min.js"></script>
+<script src="Design/js/main.js"></script>

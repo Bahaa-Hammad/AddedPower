@@ -1,10 +1,10 @@
 <?php
 
-function emptyInputSignup($name, $email,$username,$pwd,$pwdRepeat){
+function emptyInputSignup($fname,$lname,$email,$tel,$username,$pwd,$pwdRepeat){
     
     $check;
 
-    if(empty($name) || empty($email) || empty($username)|| empty($pwd)|| empty($pwdRepeat)){
+    if(empty($fname) || empty($lname) || empty($email)  || empty($tel) || empty($username)|| empty($pwd)|| empty($pwdRepeat)){
         $check = true;
     }
     else{
@@ -100,11 +100,11 @@ function uidTaken($conn,$username, $email){ // Used also in login functions
 }
 
 
-function createUser($conn,$name, $email,$username,$pwd){
+function createUser($conn,$fname,$lname,$email,$tel,$username,$pwd){
     // Accsess database
 
     // " = ? " is placeholder: to be used later after filtering out sql injections, By passing prepered statments
-    $sql = "INSERT INTO users(usersName,usersEmail,usersUid,usersPwd) VALUES(?,?,?,?);";
+    $sql = "INSERT INTO users(usersFirstName,usersLastName,usersEmail,usersPhone,usersUid,usersPwd) VALUES(?,?,?,?,?,?);";
 
     $stmt = mysqli_stmt_init($conn); // Initialize a statement and return an object to use with stmt_prepare():
 
@@ -117,7 +117,7 @@ function createUser($conn,$name, $email,$username,$pwd){
     // Hash The password: By PHP password_hash(), It can be replaced by md5(). 
     $hashedPwd = password_hash($pwd, PASSWORD_DEFAULT);
 
-    mysqli_stmt_bind_param($stmt, "ssss", $name, $email,$username,$hashedPwd);
+    mysqli_stmt_bind_param($stmt, "ssssss", $fname, $lname, $email,$tel,$username,$hashedPwd);
     mysqli_stmt_execute($stmt); // run on DB
     mysqli_stmt_close($stmt);
 
@@ -189,8 +189,12 @@ function loginUser($conn,$username,$pwd){
 
         // initialize sessions superglobals variables:
         
-        $_SESSION["userid"] = $uidTaken['usersId'];
-        $_SESSION["useruid"] = $uidTaken["usersUid"];
+        $_SESSION['userid'] = $uidTaken['usersId'];
+        $_SESSION['usersFirstName'] = $uidTaken['usersFirstName'];
+        $_SESSION['usersLastName'] = $uidTaken['usersLastName'];
+        $_SESSION['usersEmail'] = $uidTaken['usersEmail'];
+        $_SESSION['usersPhone'] = $uidTaken['usersPhone'];
+        $_SESSION['useruid'] = $uidTaken['usersUid'];
         header("location: index.php");
         exit();
     }
