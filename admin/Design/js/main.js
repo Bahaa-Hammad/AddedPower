@@ -109,7 +109,7 @@ $('.completed_appointment_button').click(function () {
         data: { do: do_, appointment_id: appointment_id },
         success: function (data) {
             //Hide Modal
-            $('#completed_appointment_' + appointment_id).modal('hide');
+            $('#cancel_appointment_' + appointment_id).modal('hide');
 
             //Show Success Message
             swal("Completed Appointment", "The Appointment has been Completed successfully!", "success").then((value) => {

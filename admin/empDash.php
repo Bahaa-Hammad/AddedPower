@@ -189,19 +189,18 @@
                                                 
                                                 echo "<td>";
                                                 	$cancel_data = "cancel_appointment_".$row["appointment_id"];
-                                                	$complete_data = "completed_appointment_".$row["appointment_id"];
                                                		?>
                                                		<ul class="list-inline m-0">
 
                                                         <!-- Done BUTTON -->
 
                                                         <li class="list-inline-item" data-toggle="tooltip" title="Completed Appointment">
-                                                            <button class="btn btn-success btn-sm rounded-0" type="button" data-toggle="modal" data-target="#<?php echo $complete_data; ?>" data-placement="top">
+                                                            <button class="btn btn-success btn-sm rounded-0" type="button" data-toggle="modal" data-target="#<?php echo $cancel_data; ?>" data-placement="top">
                                                                 <i class="fas fa-check"></i>
                                                             </button>
 
                                                             <!-- Done MODAL -->
-                                                            <div class="modal fade" id="<?php echo $complete_data; ?>" tabindex="-1" role="dialog" aria-labelledby="<?php echo $complete_data; ?>" aria-hidden="true">
+                                                            <div class="modal fade" id="<?php echo $cancel_data; ?>" tabindex="-1" role="dialog" aria-labelledby="<?php echo $$cancel_data; ?>" aria-hidden="true">
                                                                 <div class="modal-dialog" role="document">
                                                                     <div class="modal-content">
                                                                         <div class="modal-header">
