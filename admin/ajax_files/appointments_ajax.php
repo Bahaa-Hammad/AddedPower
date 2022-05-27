@@ -3,6 +3,15 @@
 
 
 <?php
+
+
+	if(isset($_POST['do']) && $_POST['do'] == "Complete Appointment")
+	{
+		$appointment_id = $_POST['appointment_id'];
+
+        $stmt = $con->prepare("DELETE from appointments where appointment_id = ?");
+        $stmt->execute(array($appointment_id));    
+	}
 	
 
 	if(isset($_POST['do']) && $_POST['do'] == "Cancel Appointment")
@@ -12,6 +21,5 @@
 
         $stmt = $con->prepare("UPDATE appointments set canceled = 1, cancellation_reason = ? where appointment_id = ?");
         $stmt->execute(array($cancellation_reason, $appointment_id));    
-	}
-	
+	} 
 ?>
