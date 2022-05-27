@@ -1,41 +1,36 @@
 
 
 /* ============ TITLE TOOLTIP TOOGLE ============== */
-	
-$(function () 
-{
-	$('[data-toggle="tooltip"]').tooltip();
+
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip();
 });
 
 
 /*
-	============================
+    ============================
 
-	VALIDATE LOGIN FORM
+    VALIDATE LOGIN FORM
 	
-	============================
+    ============================
 */
 
-function validateLogInForm() 
-{
-	var username_input = document.forms["login-form"]["username"].value;
-	var password_input = document.forms["login-form"]["password"].value;
+function validateLogInForm() {
+    var username_input = document.forms["login-form"]["username"].value;
+    var password_input = document.forms["login-form"]["password"].value;
 
-	if (username_input == "" && password_input == "") 
-    {
-    	document.getElementById('required_username').style.display = 'initial';
-    	document.getElementById('required_password').style.display = 'initial';
-    	return false;
+    if (username_input == "" && password_input == "") {
+        document.getElementById('required_username').style.display = 'initial';
+        document.getElementById('required_password').style.display = 'initial';
+        return false;
     }
-    
-    if (username_input == "") 
-   	{
-    	document.getElementById('required_username').style.display = 'initial';
-    	return false;
+
+    if (username_input == "") {
+        document.getElementById('required_username').style.display = 'initial';
+        return false;
     }
-    if(password_input == "")
-    {
-    	document.getElementById('required_password').style.display = 'initial';
+    if (password_input == "") {
+        document.getElementById('required_password').style.display = 'initial';
         return false;
     }
 }
@@ -49,23 +44,20 @@ function validateLogInForm()
     ========================================
 */
 
-function openTab(evt, tabName) 
-{
+function openTab(evt, tabName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
-    
-    for (i = 0; i < tabcontent.length; i++) 
-    {
+
+    for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
     }
 
     tablinks = document.getElementsByClassName("tablinks");
 
-    for (i = 0; i < tablinks.length; i++) 
-    {
+    for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
-    
+
     document.getElementById(tabName).style.display = "table";
     evt.currentTarget.className += " active";
 }
@@ -78,35 +70,57 @@ function openTab(evt, tabName)
     ========================================
 */
 
-$('.cancel_appointment_button').click(function()
-{
+$('.cancel_appointment_button').click(function () {
 
     var appointment_id = $(this).data('id');
-    var cancellation_reason = $('#appointment_cancellation_reason_'+appointment_id).val();
+    var cancellation_reason = $('#appointment_cancellation_reason_' + appointment_id).val();
     var do_ = 'Cancel Appointment';
 
 
     $.ajax({
         url: "ajax_files/appointments_ajax.php",
         type: "POST",
-        data:{do:do_,appointment_id:appointment_id,cancellation_reason:cancellation_reason},
-        success: function (data) 
-        {
+        data: { do: do_, appointment_id: appointment_id, cancellation_reason: cancellation_reason },
+        success: function (data) {
             //Hide Modal
-            $('#cancel_appointment_'+appointment_id).modal('hide');
-            
+            $('#cancel_appointment_' + appointment_id).modal('hide');
+
             //Show Success Message
-            swal("Cancel Appointment","The Appointment has been canceled successfully!", "success").then((value) => 
-            {
+            swal("Cancel Appointment", "The Appointment has been canceled successfully!", "success").then((value) => {
                 window.location.replace("index.php");
             });
-            
+
         },
-        error: function(xhr, status, error) 
-        {
+        error: function (xhr, status, error) {
             alert('ERROR HAS BEEN OCCURRED WHILE TRYING TO PROCESS YOUR REQUEST!');
         }
-      });
+    });
+});
+
+$('.completed_appointment_button').click(function () {
+
+    var appointment_id = $(this).data('id');
+    var do_ = 'Complete Appointment';
+
+
+    $.ajax({
+        url: "ajax_files/appointments_ajax.php",
+        type: "POST",
+        data: { do: do_, appointment_id: appointment_id },
+        success: function (data) {
+            //Hide Modal
+            $('#completed_appointment_' + appointment_id).modal('hide');
+
+            //Show Success Message
+            swal("Completed Appointment", "The Appointment has been Completed successfully!", "success").then((value) => {
+                window.location.replace("index.php");
+            });
+
+        },
+        error: function (xhr, status, error) {
+            alert('ERROR HAS BEEN OCCURRED WHILE TRYING TO PROCESS YOUR REQUEST!');
+        }
+    });
 });
 
 
@@ -119,44 +133,36 @@ $('.cancel_appointment_button').click(function()
 */
 
 
-$('#add_category_bttn').click(function()
-{
+$('#add_category_bttn').click(function () {
     var category_name = $("#category_name_input").val();
     var do_ = "Add";
 
-    if($.trim(category_name) == "")
-    {
-        $('#required_category_name').css('display','block');
+    if ($.trim(category_name) == "") {
+        $('#required_category_name').css('display', 'block');
     }
-    else
-    {
+    else {
         $.ajax(
-        {
-            url:"ajax_files/service_categories_ajax.php",
-            method:"POST",
-            data:{category_name:category_name,do:do_},
-            dataType:"JSON",
-            success: function (data) 
             {
-                if(data['alert'] == "Warning")
-                {
-                    swal("Warning",data['message'], "warning").then((value) => {});
+                url: "ajax_files/service_categories_ajax.php",
+                method: "POST",
+                data: { category_name: category_name, do: do_ },
+                dataType: "JSON",
+                success: function (data) {
+                    if (data['alert'] == "Warning") {
+                        swal("Warning", data['message'], "warning").then((value) => { });
+                    }
+                    if (data['alert'] == "Success") {
+                        $('#add_new_category').modal('hide');
+                        swal("New Category", data['message'], "success").then((value) => {
+                            window.location.replace("service-categories.php");
+                        });
+                    }
+
+                },
+                error: function (xhr, status, error) {
+                    alert('AN ERROR HAS BEEN ENCOUNTERED WHILE TRYING TO EXECUTE YOUR REQUEST');
                 }
-                if(data['alert'] == "Success")
-                {
-                    $('#add_new_category').modal('hide');
-                    swal("New Category",data['message'], "success").then((value) => 
-                    {
-                        window.location.replace("service-categories.php");
-                    });
-                }
-                
-            },
-            error: function(xhr, status, error) 
-            {
-                alert('AN ERROR HAS BEEN ENCOUNTERED WHILE TRYING TO EXECUTE YOUR REQUEST');
-            }
-        });
+            });
     }
 });
 
@@ -171,79 +177,65 @@ $('#add_category_bttn').click(function()
 
 
 
-$('.delete_category_bttn').click(function()
-{
+$('.delete_category_bttn').click(function () {
     var category_id = $(this).data('id');
     var action = "Delete";
 
     $.ajax(
-    {
-        url:"ajax_files/service_categories_ajax.php",
-        method:"POST",
-        data:{category_id:category_id,action:action},
-        dataType:"JSON",
-        success: function (data) 
         {
-            if(data['alert'] == "Warning")
-                {
-                    swal("Warning",data['message'], "warning").then((value) => {});
+            url: "ajax_files/service_categories_ajax.php",
+            method: "POST",
+            data: { category_id: category_id, action: action },
+            dataType: "JSON",
+            success: function (data) {
+                if (data['alert'] == "Warning") {
+                    swal("Warning", data['message'], "warning").then((value) => { });
                 }
-                if(data['alert'] == "Success")
-                {
-                    swal("New Category",data['message'], "success").then((value) => 
-                    {
+                if (data['alert'] == "Success") {
+                    swal("New Category", data['message'], "success").then((value) => {
                         window.location.replace("service-categories.php");
                     });
-                }     
-        },
-        error: function(xhr, status, error) 
-        {
-            alert('AN ERROR HAS BEEN ENCOUNTERED WHILE TRYING TO EXECUTE YOUR REQUEST');
-            alert(error);
-        }
-      });
-});
-
-
-$('.edit_category_bttn').click(function()
-{
-    var category_id = $(this).data('id');
-    var category_name = $("#input_category_name_"+category_id).val();
-
-    var action = "Edit";
-
-    if($.trim(category_name) == "")
-    {
-        $('#invalid_input_'+category_id).css('display','block');
-    }
-    else
-    {
-        $.ajax(
-        {
-            url:"ajax_files/service_categories_ajax.php",
-            method:"POST",
-            data:{category_id:category_id,category_name:category_name,action:action},
-            dataType:"JSON",
-            success: function (data) 
-            {
-                if(data['alert'] == "Warning")
-                {
-                    swal("Warning",data['message'], "warning").then((value) => {});
                 }
-                if(data['alert'] == "Success")
-                {
-                    swal("New Category",data['message'], "success").then((value) => 
-                    {
-                        window.location.replace("service-categories.php");
-                    });
-                }     
             },
-            error: function(xhr, status, error) 
-            {
+            error: function (xhr, status, error) {
                 alert('AN ERROR HAS BEEN ENCOUNTERED WHILE TRYING TO EXECUTE YOUR REQUEST');
                 alert(error);
             }
         });
+});
+
+
+$('.edit_category_bttn').click(function () {
+    var category_id = $(this).data('id');
+    var category_name = $("#input_category_name_" + category_id).val();
+
+    var action = "Edit";
+
+    if ($.trim(category_name) == "") {
+        $('#invalid_input_' + category_id).css('display', 'block');
+    }
+    else {
+        $.ajax(
+            {
+                url: "ajax_files/service_categories_ajax.php",
+                method: "POST",
+                data: { category_id: category_id, category_name: category_name, action: action },
+                dataType: "JSON",
+                success: function (data) {
+                    if (data['alert'] == "Warning") {
+                        swal("Warning", data['message'], "warning").then((value) => { });
+                    }
+                    if (data['alert'] == "Success") {
+                        swal("New Category", data['message'], "success").then((value) => {
+                            window.location.replace("service-categories.php");
+                        });
+                    }
+                },
+                error: function (xhr, status, error) {
+                    alert('AN ERROR HAS BEEN ENCOUNTERED WHILE TRYING TO EXECUTE YOUR REQUEST');
+                    alert(error);
+                }
+            });
     }
 });
 
@@ -257,27 +249,24 @@ $('.edit_category_bttn').click(function()
 */
 
 
-$('.delete_service_bttn').click(function()
-{
+$('.delete_service_bttn').click(function () {
     var service_id = $(this).data('id');
     var do_ = "Delete";
 
     $.ajax(
-    {
-        url:"ajax_files/services_ajax.php",
-        method:"POST",
-        data:{service_id:service_id,do:do_},
-        success: function (data) 
         {
-            swal("Delete Service","The service has been deleted successfully!", "success").then((value) => {
-                window.location.replace("services.php");
-            });     
-        },
-        error: function(xhr, status, error) 
-        {
-            alert('AN ERROR HAS BEEN ENCOUNTERED WHILE TRYING TO EXECUTE YOUR REQUEST');
-        }
-      });
+            url: "ajax_files/services_ajax.php",
+            method: "POST",
+            data: { service_id: service_id, do: do_ },
+            success: function (data) {
+                swal("Delete Service", "The service has been deleted successfully!", "success").then((value) => {
+                    window.location.replace("services.php");
+                });
+            },
+            error: function (xhr, status, error) {
+                alert('AN ERROR HAS BEEN ENCOUNTERED WHILE TRYING TO EXECUTE YOUR REQUEST');
+            }
+        });
 });
 
 
@@ -290,14 +279,12 @@ $('.delete_service_bttn').click(function()
 */
 
 
-$(".sb-worktime-day-switch").click(function()
-{
-    if(!$(this).prop('checked'))
-    {
-        $(this).closest('div.worktime-day').children(".time_").css('display','none');
+$(".sb-worktime-day-switch").click(function () {
+    if (!$(this).prop('checked')) {
+        $(this).closest('div.worktime-day').children(".time_").css('display', 'none');
     }
     else
-        $(this).closest('div.worktime-day').children(".time_").css('display','flex');
+        $(this).closest('div.worktime-day').children(".time_").css('display', 'flex');
 });
 
 
@@ -310,25 +297,22 @@ $(".sb-worktime-day-switch").click(function()
 */
 
 
- $('.delete_employee_bttn').click(function()
-{
+$('.delete_employee_bttn').click(function () {
     var employee_id = $(this).data('id');
     var do_ = "Delete";
 
     $.ajax(
-    {
-        url:"ajax_files/employees_ajax.php",
-        method:"POST",
-        data:{employee_id:employee_id,do:do_},
-        success: function (data) 
         {
-            swal("Delete Employee","The employee has been deleted successfully!", "success").then((value) => {
-                window.location.replace("employees.php");
-            });     
-        },
-        error: function(xhr, status, error) 
-        {
-            alert('AN ERROR HAS BEEN ENCOUNTERED WHILE TRYING TO EXECUTE YOUR REQUEST');
-        }
-    });
+            url: "ajax_files/employees_ajax.php",
+            method: "POST",
+            data: { employee_id: employee_id, do: do_ },
+            success: function (data) {
+                swal("Delete Employee", "The employee has been deleted successfully!", "success").then((value) => {
+                    window.location.replace("employees.php");
+                });
+            },
+            error: function (xhr, status, error) {
+                alert('AN ERROR HAS BEEN ENCOUNTERED WHILE TRYING TO EXECUTE YOUR REQUEST');
+            }
+        });
 });
