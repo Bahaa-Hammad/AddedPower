@@ -10,7 +10,7 @@
         //Includes
         include 'connect.php';
         include 'Includes/functions/functions.php'; 
-        include 'Includes/templates/header.php';
+        include 'Includes/templates/headerEmp.php';
 
 ?>
 
@@ -22,7 +22,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AddedPower - Admin Panel</title>
+    <title>AddedPower - Employee Panel</title>
 </head>
 <body>
         <!-- Begin Page Content -->

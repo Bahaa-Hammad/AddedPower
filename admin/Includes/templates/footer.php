@@ -6,7 +6,7 @@
 	  	<footer class="sticky-footer bg-white">
 			<div class="container my-auto">
 		  		<div class="copyright text-center my-auto">
-					<span>Copyright &copy; Barbershop Website by pusdo nerds programmers </span>
+					<span>Copyright &copy; AddedPower Website by pusdo nerds programmers </span>
 		  		</div>
 			</div>
 	  	</footer>
