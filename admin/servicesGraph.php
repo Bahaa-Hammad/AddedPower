@@ -1,7 +1,9 @@
 <?php
-
+session_start();
 include 'connect.php';
 include 'Includes/templates/header.php';
+
+
 
 
 
