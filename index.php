@@ -156,7 +156,7 @@
                                                 data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
                                                 data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                                                 style="z-index: 13;">
-                                                <a href="about-2.html" class="site-button button-skew"><span>Read
+                                                <a href="about-2.php" class="site-button button-skew"><span>Read
                                                         More</span><i class="fas fa-angle-right"></i></a>
                                             </div>
                                         </li>
@@ -249,7 +249,7 @@
                                                 data-textAlign="['left','left','left','left']"
                                                 data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
                                                 data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                                                style="z-index: 13;"><a href="about-2.html"
+                                                style="z-index: 13;"><a href="about-2.php"
                                                     class="site-button  button-skew"><span>Read More</span><i
                                                         class="fas fa-angle-right"></i></a>
                                             </div>
@@ -343,7 +343,7 @@
                                                 data-textAlign="['left','left','left','left']"
                                                 data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
                                                 data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                                                style="z-index: 13;"><a href="about-1.html"
+                                                style="z-index: 13;"><a href="about-1.php"
                                                     class="site-button   button-skew"><span>Read More</span><i
                                                         class="fas fa-angle-right"></i></a>
                                             </div>
@@ -378,7 +378,7 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-6 m-t20">
-                                        <a href="contact.html" class="site-button-secondry button-skew m-l10">
+                                        <a href="contact.php" class="site-button-secondry button-skew m-l10">
                                             <span>Contact Us</span><i class="fas fa-angle-right"></i></a>
 
                                     </div>
@@ -516,7 +516,6 @@
                     </div>
                 </div>
                  About Company END -->
-
                     <!-- Our Projects  -->
                     <div class="section-full bg-img-fix content-inner overlay-black-middle"
                         style="background-image:url(images/background/bg1.jpg);">
@@ -562,7 +561,7 @@
                                             </a>
                                             <div class="overlay-bx">
                                                 <div class="overlay-icon">
-                                                    <a href="portfolio-details.html"> <i
+                                                    <a href="portfolio-details.php"> <i
                                                             class="fas fa-link icon-bx-xs"></i>
                                                     </a>
                                                     <span data-exthumbimage="images/our-work/thum/brakes1.jpg"
@@ -583,7 +582,7 @@
                                             </a>
                                             <div class="overlay-bx">
                                                 <div class="overlay-icon">
-                                                    <a href="portfolio-details.html"> <i
+                                                    <a href="portfolio-details.php"> <i
                                                             class="fas fa-link icon-bx-xs"></i>
                                                     </a>
                                                     <span data-exthumbimage="images/our-work/thum/suspension1.jpg"
@@ -603,7 +602,7 @@
                                             </a>
                                             <div class="overlay-bx">
                                                 <div class="overlay-icon">
-                                                    <a href="portfolio-details.html"> <i
+                                                    <a href="portfolio-details.php"> <i
                                                             class="fas fa-link icon-bx-xs"></i>
                                                     </a>
                                                     <span data-exthumbimage="images/our-work/thum/wheels1.jpg"
@@ -623,7 +622,7 @@
                                             </a>
                                             <div class="overlay-bx">
                                                 <div class="overlay-icon">
-                                                    <a href="portfolio-details.html"> <i
+                                                    <a href="portfolio-details.php"> <i
                                                             class="fas fa-link icon-bx-xs"></i>
                                                     </a>
                                                     <span data-exthumbimage="images/our-work/thum/wheels2.jpg"
@@ -643,7 +642,7 @@
                                             </a>
                                             <div class="overlay-bx">
                                                 <div class="overlay-icon">
-                                                    <a href="portfolio-details.html"> <i
+                                                    <a href="portfolio-details.php"> <i
                                                             class="fas fa-link icon-bx-xs"></i>
                                                     </a>
                                                     <span data-exthumbimage="images/our-work/thum/steering1.jpg"
@@ -663,7 +662,7 @@
                                             </a>
                                             <div class="overlay-bx">
                                                 <div class="overlay-icon">
-                                                    <a href="portfolio-details.html"> <i
+                                                    <a href="portfolio-details.php"> <i
                                                             class="fas fa-link icon-bx-xs"></i>
                                                     </a>
                                                     <span data-exthumbimage="images/our-work/thum/steering2.jpg"
@@ -774,7 +773,7 @@
                                 <div class="row">
                                     <div class="col-lg-3 col-md-6 col-sm-6">
                                         <div class="dlab-box m-b30">
-                                            <div class="dlab-media"> <a href="our-team.html"> <img width="358"
+                                            <div class="dlab-media"> <a href="our-team.php"> <img width="358"
                                                         height="460" alt="" src="images/our-team/team1.jpg"> </a>
                                                 <div class="dlab-info-has skew-has  bg-primary">
                                                     <ul class="dlab-social-icon dez-border">
@@ -800,7 +799,7 @@
                                     </div>
                                     <div class="col-lg-3 col-md-6 col-sm-6">
                                         <div class="dlab-box m-b30">
-                                            <div class="dlab-media"> <a href="our-team.html"> <img width="358"
+                                            <div class="dlab-media"> <a href="our-team.php"> <img width="358"
                                                         height="460" alt="" src="images/our-team/team2.jpg"> </a>
                                                 <div class="dlab-info-has skew-has bg-primary">
                                                     <ul class="dlab-social-icon dez-border">
@@ -826,7 +825,7 @@
                                     </div>
                                     <div class="col-lg-3 col-md-6 col-sm-6">
                                         <div class="dlab-box m-b30">
-                                            <div class="dlab-media"> <a href="our-team.html"> <img width="358"
+                                            <div class="dlab-media"> <a href="our-team.php"> <img width="358"
                                                         height="460" alt="" src="images/our-team/team3.jpg"> </a>
                                                 <div class="dlab-info-has skew-has bg-primary">
                                                     <ul class="dlab-social-icon dez-border">
@@ -852,7 +851,7 @@
                                     </div>
                                     <div class="col-lg-3 col-md-6 col-sm-6">
                                         <div class="dlab-box m-b10">
-                                            <div class="dlab-media"> <a href="our-team.html"> <img width="358"
+                                            <div class="dlab-media"> <a href="our-team.php"> <img width="358"
                                                         height="460" alt="" src="images/our-team/team4.jpg"> </a>
                                                 <div class="dlab-info-has skew-has bg-primary">
                                                     <ul class="dlab-social-icon dez-border">
@@ -1056,12 +1055,12 @@
                                             <div class="dlab-separator bg-white style-skew"></div>
                                         </div>
                                         <ul>
-                                            <li><a href="engine-diagnostics.html">Engine Diagnostics</a></li>
-                                            <li><a href="lube-oil-and-filters.html">Lube, Oil and Filters</a></li>
-                                            <li><a href="belts-and-hoses.html">Belts and Hoses</a></li>
-                                            <li><a href="air-conditioning.html">Air Conditioning</a></li>
-                                            <li><a href="brake-repair.html">Brake Repair</a></li>
-                                            <li><a href="tire-and-wheel-services.html">Tire And Wheel Services</a></li>
+                                            <li><a href="engine-diagnostics.php">Engine Diagnostics</a></li>
+                                            <li><a href="lube-oil-and-filters.php">Lube, Oil and Filters</a></li>
+                                            <li><a href="belts-and-hoses.php">Belts and Hoses</a></li>
+                                            <li><a href="air-conditioning.php">Air Conditioning</a></li>
+                                            <li><a href="brake-repair.php">Brake Repair</a></li>
+                                            <li><a href="tire-and-wheel-services.php">Tire And Wheel Services</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1100,9 +1099,9 @@
                                             target="_blank">Pseudo Program Nerds</a> </span>
                                 </div>
                                 <div class="col-lg-4 col-md-4 text-right">
-                                    <a href="about-2.html"> About</a>
-                                    <a href="faq-1.html"> FAQs</a>
-                                    <a href="contact.html"> Contact</a>
+                                    <a href="about-2.php"> About</a>
+                                    <a href="faq-1.php"> FAQs</a>
+                                    <a href="contact.php"> Contact</a>
                                 </div>
                             </div>
                         </div>

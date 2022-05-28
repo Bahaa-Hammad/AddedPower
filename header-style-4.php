@@ -89,7 +89,7 @@ session_start();
                             </div>';
                             }else{
                                 echo '<div class="extra-cell">
-                                <a href="sign-up.html"><button class="site-button m-r15"
+                                <a href="sign-up.php"><button class="site-button m-r15"
                                         type="button">Signup</button></a>
                                 <a href="login-1.html"><button class="site-button m-r15"
                                         type="button">Login</button></a>
