@@ -1,43 +1,47 @@
 <?php
 
+include 'connect.php';
+include 'Includes/templates/header.php';
 
-$stmt = $con->prepare("SELECT * FROM services_booked s where = service_id = 1");
+
+
+$stmt = $con->prepare("SELECT * FROM services_booked where service_id = 1;");
 $stmt->execute(array());
 $rows = $stmt->fetchAll();
 $EngineDiagnosticsCount = $stmt->rowCount();
 
-$stmt = $con->prepare("SELECT * FROM services_booked s where = service_id = 2");
+$stmt = $con->prepare("SELECT * FROM services_booked  where  service_id = 2");
 $stmt->execute(array());
 $rows = $stmt->fetchAll();
 $LubeOilandFiltersCount = $stmt->rowCount();
 
-$stmt = $con->prepare("SELECT * FROM services_booked s where = service_id = 3");
+$stmt = $con->prepare("SELECT * FROM services_booked  where  service_id = 3");
 $stmt->execute(array());
 $rows = $stmt->fetchAll();
 $BeltsandHosesCount = $stmt->rowCount();
 
-$stmt = $con->prepare("SELECT * FROM services_booked s where = service_id = 4");
+$stmt = $con->prepare("SELECT * FROM services_booked  where  service_id = 4");
 $stmt->execute(array());
 $rows = $stmt->fetchAll();
 $AirConditioningCount = $stmt->rowCount();
 
-$stmt = $con->prepare("SELECT * FROM services_booked s where = service_id = 5");
+$stmt = $con->prepare("SELECT * FROM services_booked  where  service_id = 5");
 $stmt->execute(array());
 $rows = $stmt->fetchAll();
 $BrakeRepairCount = $stmt->rowCount();
 
-$stmt = $con->prepare("SELECT * FROM services_booked s where = service_id = 6");
+$stmt = $con->prepare("SELECT * FROM services_booked  where  service_id = 6");
 $stmt->execute(array());
 $rows = $stmt->fetchAll();
 $TireandWheelServicesCount = $stmt->rowCount();
  
 $dataPoints = array(
-	array("label"=> "Food + Drinks", "y"=> $EngineDiagnosticsCount),
-	array("label"=> "Activities and Entertainments", "y"=> $LubeOilandFiltersCount),
-	array("label"=> "Health and Fitness", "y"=> $BeltsandHosesCount),
-	array("label"=> "Shopping & Misc", "y"=> $AirConditioningCount),
-	array("label"=> "Transportation", "y"=> $BrakeRepairCount),
-	array("label"=> "Rent", "y"=> $TireandWheelServicesCount),
+	array("label"=> "Engine Diagnostics", "y"=> $EngineDiagnosticsCount),
+	array("label"=> "A Lube Oil and Filters", "y"=> $LubeOilandFiltersCount),
+	array("label"=> "Belts and Hoses", "y"=> $BeltsandHosesCount),
+	array("label"=> "Air Conditioning", "y"=> $AirConditioningCount),
+	array("label"=> "Brake Repair", "y"=> $BrakeRepairCount),
+	array("label"=> "Tire and Wheel Services", "y"=> $TireandWheelServicesCount),
 );
 	
 ?>
@@ -51,10 +55,10 @@ var chart = new CanvasJS.Chart("chartContainer", {
 	animationEnabled: true,
 	exportEnabled: true,
 	title:{
-		text: "Average Expense Per Day  in Thai Baht"
+		text: " Booked Services "
 	},
 	subtitles: [{
-		text: "Currency Used: Thai Baht (฿)"
+		text: "Based On Current and Upcomming Appoinments"
 	}],
 	data: [{
 		type: "pie",
