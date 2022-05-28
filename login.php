@@ -15,7 +15,7 @@ if(isset($_POST['submit'])){
 
     if(emptyInputLogin($username, $pwd) === true){
         // Send the user back with the error attached to the url using ?error=
-        header("location: sign-up.html?error=emptyinput"); 
+        header("location: sign-up.php?error=emptyinput"); 
         exit(); // Stop the script 
     }
 

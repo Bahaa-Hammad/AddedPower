@@ -54,7 +54,7 @@
 			<div class="breadcrumb-row">
 				<div class="container">
 					<ul class="list-inline">
-						<li><a href="index.html">Home</a></li>
+						<li><a href="index.php">Home</a></li>
 						<li>FAQs</li>
 					</ul>
 				</div>
@@ -85,7 +85,7 @@
 													<div class="acod-content">we are specialized in exhaust
 														manufacturing. We built a highly professional exhaust system for
 														almost all car brands. <br>
-														<p>Please to find out more about our servises, do nevigate to our <a  style="text-decoration: none; color: green;"  href="all-service.html">all service page</a>.</p>
+														<p>Please to find out more about our servises, do nevigate to our <a  style="text-decoration: none; color: green;"  href="all-service.php">all service page</a>.</p>
 
 													</div>
 												</div>

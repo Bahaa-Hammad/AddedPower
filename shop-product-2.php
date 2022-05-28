@@ -138,7 +138,7 @@
 										</div>
 										<div class="dlab-info p-a20 text-center">
 											<h4 class="dlab-title m-t0 text-uppercase"><a
-													href="shop-product-details.html">tires  (per tire)</a></h4>
+													href="shop-product-details.php">tires  (per tire)</a></h4>
 											<h2 class="m-b0"><del class="m-r10">$100.00</del> $90.00 </h2>
 											<div class="m-t20">
 												<a href="#" class="site-button">Add To Cart </a>

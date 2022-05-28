@@ -37,7 +37,7 @@
     <div class="page-wraper">
         <!-- header -->
 
-        <?php include('header-style-4.html'); ?>
+        <?php include('header-style-4.php'); ?>
 
         <!-- header END -->
 
@@ -75,13 +75,13 @@
                         <div class="col-lg-3 col-md-4 col-sm-6">
                             <div class="widget_services style-2 m-b40">
                                 <ul>
-                                    <li><a href="all-service.html">ALL SERVICES</a> </li>
-                                    <li><a href="engine-diagnostics.html">ENGINE DIAGNOSTICS</a> </li>
-                                    <li><a href="lube-oil-and-filters.html">LUBE OIL AND FILTERS</a> </li>
-                                    <li><a href="belts-and-hoses.html">BELTS AND HOSES</a> </li>
-                                    <li><a href="air-conditioning.html">AIR CONDITIONING</a> </li>
-                                    <li class="active"><a href="brake-repair.html">BRAKE REPAIR</a> </li>
-                                    <li><a href="tire-and-wheel-services.html">TIRE AND WHEEL SERVICES</a> </li>
+                                    <li><a href="all-service.php">ALL SERVICES</a> </li>
+                                    <li><a href="engine-diagnostics.php">ENGINE DIAGNOSTICS</a> </li>
+                                    <li><a href="lube-oil-and-filters.php">LUBE OIL AND FILTERS</a> </li>
+                                    <li><a href="belts-and-hoses.php">BELTS AND HOSES</a> </li>
+                                    <li><a href="air-conditioning.php">AIR CONDITIONING</a> </li>
+                                    <li class="active"><a href="brake-repair.php">BRAKE REPAIR</a> </li>
+                                    <li><a href="tire-and-wheel-services.php">TIRE AND WHEEL SERVICES</a> </li>
                                 </ul>
                             </div>
                             <div class="widget">
