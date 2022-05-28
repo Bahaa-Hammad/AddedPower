@@ -113,7 +113,7 @@ $('.completed_appointment_button').click(function () {
 
             //Show Success Message
             swal("Completed Appointment", "The Appointment has been Completed successfully!", "success").then((value) => {
-                window.location.replace("index.php");
+                window.location.replace("empDash.php");
             });
 
         },

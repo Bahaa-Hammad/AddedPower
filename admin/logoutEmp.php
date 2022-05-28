@@ -5,6 +5,6 @@
 	session_unset();
 	//Destroy Session
 	session_destroy();
-	header('Location: facultyPort.php');
+	header('Location: loginEmp.php');
 	exit();
 ?>

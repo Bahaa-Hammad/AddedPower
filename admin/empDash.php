@@ -2,10 +2,10 @@
 	session_start();
 
 	//Check If user is already logged in
-	if(isset($_SESSION['adminUsername']) && isset($_SESSION['adminPwd']))
+	if(isset($_SESSION['empUsername']) && isset($_SESSION['empPwd']))
 	{
         //Page Title
-        $pageTitle = 'Dashboard';
+        $pageTitle = 'Employee Dashboard';
 
         //Includes
         include 'connect.php';
@@ -120,11 +120,12 @@
                             <tbody>
 
                                 <?php
+                                    $id = $_SESSION['empId'];
                                     $stmt = $con->prepare("SELECT * 
                                                     FROM appointments a , clients c
                                                     where start_time >= ?
                                                     and a.client_id = c.client_id
-                                                    and canceled = 0 and a.employee_id = 1
+                                                    and canceled = 0 and a.employee_id = $id 
                                                     order by start_time;
                                                     ");
                                     $stmt->execute(array(date('Y-m-d H:i:s')));
@@ -436,7 +437,7 @@
 	}
 	else
     {
-    	header('Location: login.php');
+    	header('Location: loginEmp.php');
         exit();
     }
 
