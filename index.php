@@ -97,6 +97,7 @@ include '../Includes/functions/functions.php';
                                         <!-- LAYER NR. 4 [ for readmore botton ] -->
                                         <div class="tp-caption tp-resizeme" id="slide-100-layer-4" data-x="['left','left','left','left']" data-hoffset="['30','30','30','30']" data-y="['top','top','top','top']" data-voffset="['420','370','370','370']" data-fontsize="['none','none','none','none']" data-lineheight="['none','none','none','none']" data-width="['700','700','700','700']" data-height="['none','none','none','none']" data-fontweight="['700','700','700','700']" data-whitespace="['normal','normal','normal','normal']" data-type="text" data-responsive_offset="on" data-frames='[
 										{"from":"y:50px(R);opacity:0;","speed":1500,"to":"o:1;","delay":500,"ease":"Power4.easeOut"},
+<<<<<<< HEAD
 										{"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 13;">
                                             <a href="about-2.html" class="site-button button-skew"><span>Read
                                                     More</span><i class="fas fa-angle-right"></i></a>
@@ -115,6 +116,65 @@ include '../Includes/functions/functions.php';
                                             <span class="text-uppercase" style="font-family: 'Poppins',sans-serif;">MAKE
                                                 YOUR CAR <br /> LAST LONGER</span>
                                         </div>
+=======
+										{"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}]'
+                                                data-textAlign="['left','left','left','left']"
+                                                data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
+                                                data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                                                style="z-index: 13;">
+                                                <a href="about-2.php" class="site-button button-skew"><span>Read
+                                                        More</span><i class="fas fa-angle-right"></i></a>
+                                            </div>
+                                        </li>
+                                        <!-- SLIDE 2 -->
+                                        <li data-index="rs-2000" data-transition="slidingoverlayhorizontal"
+                                            data-slotamount="default" data-hideafterloop="0"
+                                            data-hideslideonmobile="off" data-easein="default" data-easeout="default"
+                                            data-masterspeed="default" data-thumb="images/main-slider/Slider2.jpg"
+                                            data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1=""
+                                            data-param2="" data-param3="" data-param4="" data-param5="" data-param6=""
+                                            data-param7="" data-param8="" data-param9="" data-param10=""
+                                            data-description="">
+                                            <!-- MAIN IMAGE -->
+                                            <img src="images/main-slider/Slider2.jpg" alt=""
+                                                data-bgposition="center center" data-bgfit="cover"
+                                                data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina />
+                                            <!-- LAYERS -->
+                                            <!-- LAYER NR. 1 [ for overlay ] -->
+                                            <div class="tp-caption tp-shape tp-shapewrapper " id="slide-200-layer-1"
+                                                data-x="['center','center','center','center']"
+                                                data-hoffset="['0','0','0','0']"
+                                                data-y="['middle','middle','middle','middle']"
+                                                data-voffset="['0','0','0','0']" data-width="full" data-height="full"
+                                                data-whitespace="nowrap" data-type="shape" data-basealign="slide"
+                                                data-responsive_offset="off" data-responsive="off"
+                                                data-frames='[{"from":"opacity:0;","speed":1000,"to":"o:1;","delay":0,"ease":"Power4.easeOut"},{"delay":"wait","speed":1000,"to":"opacity:0;","ease":"Power4.easeOut"}]'
+                                                data-textAlign="['left','left','left','left']"
+                                                data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
+                                                data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                                                style="z-index: 12;background-color:rgba(0, 0, 0, 0.50);border-color:rgba(0, 0, 0, 0);border-width:0px;">
+                                            </div>
+                                            <!-- LAYER NR. 2 [ for title ] -->
+                                            <div class="tp-caption tp-resizeme" id="slide-200-layer-2"
+                                                data-x="['left','left','left','left']"
+                                                data-hoffset="['30','30','30','30']" data-y="['top','top','top','top']"
+                                                data-voffset="['150','110','110','70']"
+                                                data-fontsize="['55','55','55','36']"
+                                                data-lineheight="['60','60','60','46']"
+                                                data-width="['800','800','800','800']"
+                                                data-height="['none','none','none','none']"
+                                                data-whitespace="['normal','normal','normal','normal']" data-type="text"
+                                                data-responsive_offset="on"
+                                                data-frames='[{"from":"y:50px(R);opacity:0;","speed":1500,"to":"o:1;","delay":500,"ease":"Power4.easeOut"},{"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}]'
+                                                data-textAlign="['left','left','left','left']"
+                                                data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
+                                                data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                                                style="z-index: 13; white-space: normal; font-size: 60px; line-height: 60px; font-weight: 700; color: rgba(255, 255, 255, 1.00); border-width:0px;">
+                                                <span class="text-uppercase"
+                                                    style="font-family: 'Poppins',sans-serif;">MAKE
+                                                    YOUR CAR <br /> LAST LONGER</span>
+                                            </div>
+>>>>>>> 349157852c51ebd17ef98cdfbec1e133136e6ce5
 
                                         <!-- LAYER NR. 3 [ for paragraph] -->
                                         <div class="tp-caption tp-resizeme" id="slide-200-layer-3" data-x="['left','left','left','left']" data-hoffset="['30','30','30','30']" data-y="['top','top','top','top']" data-voffset="['300','250','250','190']" data-fontsize="['20','20','20','20']" data-lineheight="['30','30','30','30']" data-width="['800','800','700','420']" data-height="['none','none','none','none']" data-whitespace="['normal','normal','normal','normal']" data-type="text" data-responsive_offset="on" data-frames='[
@@ -130,6 +190,7 @@ include '../Includes/functions/functions.php';
                                         <!-- LAYER NR. 4 [ for readmore botton ] -->
                                         <div class="tp-caption tp-resizeme" id="slide-200-layer-4" data-x="['left','left','left','left']" data-hoffset="['30','30','30','30']" data-y="['top','top','top','top']" data-voffset="['420','370','370','370']" data-fontsize="['none','none','none','none']" data-lineheight="['none','none','none','none']" data-width="['700','700','700','700']" data-height="['none','none','none','none']" data-whitespace="['normal','normal','normal','normal']" data-type="text" data-responsive_offset="on" data-frames='[ 
 										{"from":"y:50px(R);opacity:0;","speed":1500,"to":"o:1;","delay":500,"ease":"Power4.easeOut"},
+<<<<<<< HEAD
 										{"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 13;"><a href="about-2.html" class="site-button  button-skew"><span>Read More</span><i class="fas fa-angle-right"></i></a>
                                         </div>
                                     </li>
@@ -146,6 +207,65 @@ include '../Includes/functions/functions.php';
                                             <span class="text-uppercase" style="font-family: 'Poppins',sans-serif;">MAKE
                                                 YOUR CAR <br /> LAST LONGER</span>
                                         </div>
+=======
+										{"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}]'
+                                                data-textAlign="['left','left','left','left']"
+                                                data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
+                                                data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                                                style="z-index: 13;"><a href="about-2.php"
+                                                    class="site-button  button-skew"><span>Read More</span><i
+                                                        class="fas fa-angle-right"></i></a>
+                                            </div>
+                                        </li>
+                                        <!-- SLIDE 3 -->
+                                        <li data-index="rs-3000" data-transition="slidingoverlayhorizontal"
+                                            data-slotamount="default" data-hideafterloop="0"
+                                            data-hideslideonmobile="off" data-easein="default" data-easeout="default"
+                                            data-masterspeed="default" data-thumb="images/main-slider/Slider3.jpg"
+                                            data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1=""
+                                            data-param2="" data-param3="" data-param4="" data-param5="" data-param6=""
+                                            data-param7="" data-param8="" data-param9="" data-param10=""
+                                            data-description="">
+                                            <!-- MAIN IMAGE -->
+                                            <img src="images/main-slider/Slider3.jpg" alt=""
+                                                data-bgposition="center center" data-bgfit="cover"
+                                                data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina />
+                                            <!-- LAYERS -->
+                                            <!-- LAYER NR. 1 [ for overlay ] -->
+                                            <div class="tp-caption tp-shape tp-shapewrapper " id="slide-300-layer-1"
+                                                data-x="['center','center','center','center']"
+                                                data-hoffset="['0','0','0','0']"
+                                                data-y="['middle','middle','middle','middle']"
+                                                data-voffset="['0','0','0','0']" data-width="full" data-height="full"
+                                                data-whitespace="nowrap" data-type="shape" data-basealign="slide"
+                                                data-responsive_offset="off" data-responsive="off"
+                                                data-frames='[{"from":"opacity:0;","speed":1000,"to":"o:1;","delay":0,"ease":"Power4.easeOut"},{"delay":"wait","speed":1000,"to":"opacity:0;","ease":"Power4.easeOut"}]'
+                                                data-textAlign="['left','left','left','left']"
+                                                data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
+                                                data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                                                style="z-index: 12;background-color:rgba(0, 0, 0, 0.50);border-color:rgba(0, 0, 0, 0);border-width:0px;">
+                                            </div>
+                                            <!-- LAYER NR. 2 [ for title ] -->
+                                            <div class="tp-caption tp-resizeme" id="slide-300-layer-2"
+                                                data-x="['left','left','left','left']"
+                                                data-hoffset="['30','30','30','30']" data-y="['top','top','top','top']"
+                                                data-voffset="['150','110','110','70']"
+                                                data-fontsize="['55','55','55','36']"
+                                                data-lineheight="['60','60','60','46']"
+                                                data-width="['800','800','800','800']"
+                                                data-height="['none','none','none','none']"
+                                                data-whitespace="['normal','normal','normal','normal']" data-type="text"
+                                                data-responsive_offset="on"
+                                                data-frames='[{"from":"y:50px(R);opacity:0;","speed":1500,"to":"o:1;","delay":500,"ease":"Power4.easeOut"},{"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}]'
+                                                data-textAlign="['left','left','left','left']"
+                                                data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
+                                                data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                                                style="z-index: 13; white-space: normal; font-size: 60px; line-height: 60px; font-weight: 700; color: rgba(255, 255, 255, 1.00); border-width:0px;">
+                                                <span class="text-uppercase"
+                                                    style="font-family: 'Poppins',sans-serif;">MAKE
+                                                    YOUR CAR <br /> LAST LONGER</span>
+                                            </div>
+>>>>>>> 349157852c51ebd17ef98cdfbec1e133136e6ce5
 
                                         <!-- LAYER NR. 3 [ for paragraph] -->
                                         <div class="tp-caption tp-resizeme" id="slide-300-layer-3" data-x="['left','left','left','left']" data-hoffset="['30','30','30','30']" data-y="['top','top','top','top']" data-voffset="['300','250','250','190']" data-fontsize="['20','20','20','20']" data-lineheight="['30','30','30','30']" data-width="['800','800','700','420']" data-height="['none','none','none','none']" data-whitespace="['normal','normal','normal','normal']" data-type="text" data-responsive_offset="on" data-frames='[
@@ -161,11 +281,26 @@ include '../Includes/functions/functions.php';
                                         <!-- LAYER NR. 4 [ for readmore botton ] -->
                                         <div class="tp-caption tp-resizeme" id="slide-300-layer-4" data-x="['left','left','left','left']" data-hoffset="['30','30','30','30']" data-y="['top','top','top','top']" data-voffset="['420','370','370','370']" data-fontsize="['none','none','none','none']" data-lineheight="['none','none','none','none']" data-width="['700','700','700','700']" data-height="['none','none','none','none']" data-whitespace="['normal','normal','normal','normal']" data-type="text" data-responsive_offset="on" data-frames='[ 
 										{"from":"y:50px(R);opacity:0;","speed":1500,"to":"o:1;","delay":500,"ease":"Power4.easeOut"},
+<<<<<<< HEAD
 										{"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 13;"><a href="about-1.html" class="site-button   button-skew"><span>Read More</span><i class="fas fa-angle-right"></i></a>
                                         </div>
                                     </li>
                                 </ul>
                                 <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
+=======
+										{"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}]'
+                                                data-textAlign="['left','left','left','left']"
+                                                data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
+                                                data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                                                style="z-index: 13;"><a href="about-1.php"
+                                                    class="site-button   button-skew"><span>Read More</span><i
+                                                        class="fas fa-angle-right"></i></a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
+                                </div>
+>>>>>>> 349157852c51ebd17ef98cdfbec1e133136e6ce5
                             </div>
                         </div>
                         <!-- END REVOLUTION SLIDER -->
@@ -191,10 +326,16 @@ include '../Includes/functions/functions.php';
                                             </p>
                                         </div>
                                     </div>
+<<<<<<< HEAD
                                 </div>
                                 <div class="col-lg-6 m-t20">
                                     <a href="contact.html" class="site-button-secondry button-skew m-l10">
                                         <span>Contact Us</span><i class="fas fa-angle-right"></i></a>
+=======
+                                    <div class="col-lg-6 m-t20">
+                                        <a href="contact.php" class="site-button-secondry button-skew m-l10">
+                                            <span>Contact Us</span><i class="fas fa-angle-right"></i></a>
+>>>>>>> 349157852c51ebd17ef98cdfbec1e133136e6ce5
 
                                 </div>
                             </div>
@@ -326,6 +467,7 @@ include '../Includes/functions/functions.php';
                     </div>
                 </div>
                  About Company END -->
+<<<<<<< HEAD
 
                 <!-- Our Projects  -->
                 <div class="section-full bg-img-fix content-inner overlay-black-middle" style="background-image:url(images/background/bg1.jpg);">
@@ -358,6 +500,165 @@ include '../Includes/functions/functions.php';
                                 <li data-filter="window" class="btn">
                                     <input type="radio">
                                     <a href="#" class="site-button-secondry"><span>Steering </span></a>
+=======
+                    <!-- Our Projects  -->
+                    <div class="section-full bg-img-fix content-inner overlay-black-middle"
+                        style="background-image:url(images/background/bg1.jpg);">
+                        <div class="container">
+                            <div class="section-head  text-center text-white">
+                                <h2 class="text-uppercase">Our Projects</h2>
+                                <div class="dlab-separator-outer ">
+                                    <div class="dlab-separator bg-white style-skew"></div>
+                                </div>
+                                <p>Since we started we did multiple successful projects that satisfied the needs of our different customers</p>
+                            </div>
+                            <div class="site-filters clearfix center  m-b40">
+                                <ul class="filters" data-bs-toggle="buttons">
+                                    <li data-filter="" class="btn active">
+                                        <input type="radio">
+                                        <a href="#" class="site-button-secondry"><span>Show All</span></a>
+                                    </li>
+                                    <li data-filter="home" class="btn">
+                                        <input type="radio">
+                                        <a href="#" class="site-button-secondry"><span>Brakes</span></a>
+                                    </li>
+                                    <li data-filter="office" class="btn">
+                                        <input type="radio">
+                                        <a href="#" class="site-button-secondry"><span>Suspension</span></a>
+                                    </li>
+                                    <li data-filter="commercial" class="btn">
+                                        <input type="radio">
+                                        <a href="#" class="site-button-secondry"><span>Wheels</span></a>
+                                    </li>
+                                    <li data-filter="window" class="btn">
+                                        <input type="radio">
+                                        <a href="#" class="site-button-secondry"><span>Steering </span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <ul id="masonry"
+                                class="row dlab-gallery-listing gallery-grid-4 lightgallery gallery s m-b0">
+                                <li class="home card-container col-lg-4 col-md-4 col-sm-6 col-6">
+                                    <div class="dlab-box dlab-gallery-box">
+                                        <div class="dlab-media dlab-img-overlay1 dlab-img-effect zoom-slow"> <a
+                                                href="javascript:void(0);"> <img src="images/our-work/brakes1.jpg"
+                                                    alt="">
+                                            </a>
+                                            <div class="overlay-bx">
+                                                <div class="overlay-icon">
+                                                    <a href="portfolio-details.php"> <i
+                                                            class="fas fa-link icon-bx-xs"></i>
+                                                    </a>
+                                                    <span data-exthumbimage="images/our-work/thum/brakes1.jpg"
+                                                        data-src="images/our-work/brakes1.jpg"
+                                                        class="far fa-image icon-bx-xs check-km"
+                                                        title="Light Gallery Grid 1"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="office card-container col-lg-4 col-md-4 col-sm-6 col-6">
+                                    <div class="dlab-box dlab-gallery-box">
+                                        <div
+                                            class="dlab-media dlab-img-overlay1 dlab-img-effect zoom-slow dlab-img-effect zoom">
+                                            <a href="javascript:void(0);"> <img src="images/our-work/suspension1.jpg"
+                                                    alt="">
+                                            </a>
+                                            <div class="overlay-bx">
+                                                <div class="overlay-icon">
+                                                    <a href="portfolio-details.php"> <i
+                                                            class="fas fa-link icon-bx-xs"></i>
+                                                    </a>
+                                                    <span data-exthumbimage="images/our-work/thum/suspension1.jpg"
+                                                        data-src="images/our-work/suspension1.jpg"
+                                                        class="far fa-image icon-bx-xs check-km"
+                                                        title="Light Gallery Grid 1"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="card-container col-lg-4 col-md-4 col-sm-6 col-6 commercial">
+                                    <div class="dlab-box dlab-gallery-box">
+                                        <div class="dlab-media dlab-img-overlay1 dlab-img-effect zoom-slow"> <a
+                                                href="javascript:void(0);"> <img src="images/our-work/wheels1.jpg"
+                                                    alt="">
+                                            </a>
+                                            <div class="overlay-bx">
+                                                <div class="overlay-icon">
+                                                    <a href="portfolio-details.php"> <i
+                                                            class="fas fa-link icon-bx-xs"></i>
+                                                    </a>
+                                                    <span data-exthumbimage="images/our-work/thum/wheels1.jpg"
+                                                        data-src="images/our-work/wheels1.jpg"
+                                                        class="far fa-image icon-bx-xs check-km"
+                                                        title="Light Gallery Grid 1"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="commercial card-container col-lg-4 col-md-4 col-sm-6 col-6">
+                                    <div class="dlab-box dlab-gallery-box">
+                                        <div class="dlab-media dlab-img-overlay1 dlab-img-effect zoom-slow"> <a
+                                                href="javascript:void(0);"> <img src="images/our-work/wheels2.jpg"
+                                                    alt="">
+                                            </a>
+                                            <div class="overlay-bx">
+                                                <div class="overlay-icon">
+                                                    <a href="portfolio-details.php"> <i
+                                                            class="fas fa-link icon-bx-xs"></i>
+                                                    </a>
+                                                    <span data-exthumbimage="images/our-work/thum/wheels2.jpg"
+                                                        data-src="images/our-work/wheels2.jpg"
+                                                        class="far fa-image icon-bx-xs check-km"
+                                                        title="Light Gallery Grid 1"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="window card-container col-lg-4 col-md-4 col-sm-6 col-6">
+                                    <div class="dlab-box dlab-gallery-box">
+                                        <div class="dlab-media dlab-img-overlay1 dlab-img-effect zoom-slow"> <a
+                                                href="javascript:void(0);"> <img src="images/our-work/steering1.jpg"
+                                                    alt="">
+                                            </a>
+                                            <div class="overlay-bx">
+                                                <div class="overlay-icon">
+                                                    <a href="portfolio-details.php"> <i
+                                                            class="fas fa-link icon-bx-xs"></i>
+                                                    </a>
+                                                    <span data-exthumbimage="images/our-work/thum/steering1.jpg"
+                                                        data-src="images/our-work/steering1.jpg"
+                                                        class="far fa-image icon-bx-xs check-km"
+                                                        title="Light Gallery Grid 1"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="window card-container col-lg-4 col-md-4 col-sm-6 col-6">
+                                    <div class="dlab-box dlab-gallery-box">
+                                        <div class="dlab-media dlab-img-overlay1 dlab-img-effect zoom-slow"> <a
+                                                href="javascript:void(0);"> <img src="images/our-work/steering2.jpg"
+                                                    alt="">
+                                            </a>
+                                            <div class="overlay-bx">
+                                                <div class="overlay-icon">
+                                                    <a href="portfolio-details.php"> <i
+                                                            class="fas fa-link icon-bx-xs"></i>
+                                                    </a>
+                                                    <span data-exthumbimage="images/our-work/thum/steering2.jpg"
+                                                        data-src="images/our-work/steering2.jpg"
+                                                        class="far fa-image icon-bx-xs check-km"
+                                                        title="Light Gallery Grid 1"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+>>>>>>> 349157852c51ebd17ef98cdfbec1e133136e6ce5
                                 </li>
                             </ul>
                         </div>
@@ -449,6 +750,317 @@ include '../Includes/functions/functions.php';
                             </li>
                         </ul>
                     </div>
+<<<<<<< HEAD
+=======
+                    <!-- Our Projects END -->
+                    <!-- OUR SERVICES -->
+                    <div class="section-full bg-white content-inner">
+                        <div class="container">
+                            <div class="section-head text-center">
+                                <h2 class="text-uppercase"> OUR SERVICES</h2>
+                                <div class="dlab-separator-outer ">
+                                    <div class="dlab-separator bg-secondry style-skew"></div>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 col-sm-6">
+                                    <div class="icon-bx-wraper center m-b40">
+                                        <div class="icon-bx-sm bg-secondry m-b20"> <span class="icon-cell"><i
+                                                    class="ti-reload text-primary"></i></span> </div>
+                                        <div class="icon-content">
+                                            <h5 class="dlab-tilte text-uppercase">AIR CONDITIONING</h5>
+                                            <p>Car A/C systems have components that require love to avoid
+                                                drying out</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-6">
+                                    <div class="icon-bx-wraper center m-b40">
+                                        <div class="icon-bx-sm bg-secondry m-b20"> <span class="icon-cell"><i
+                                                    class="ti-car text-primary"></i></span> </div>
+                                        <div class="icon-content">
+                                            <h5 class="dlab-tilte text-uppercase">BRAKE REPAIR</h5>
+                                            <p>From the brake pedal to hydraulic brake fluid, AddedPower will take care
+                                                of it </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-6">
+                                    <div class="icon-bx-wraper center m-b40">
+                                        <div class="icon-bx-sm bg-secondry m-b20"> <span class="icon-cell"><i
+                                                    class="ti-thumb-up text-primary"></i></span> </div>
+                                        <div class="icon-content">
+                                            <h5 class="dlab-tilte text-uppercase">LUBE, OIL AND FILTERS</h5>
+                                            <p>Oil is the lifeblood of your engine,It reduces friction, lessens wear,
+                                                provides lubrication</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-6">
+                                    <div class="icon-bx-wraper center m-b40">
+                                        <div class="icon-bx-sm bg-secondry m-b20"> <span class="icon-cell"><i
+                                                    class="ti-cup text-primary"></i></span> </div>
+                                        <div class="icon-content">
+                                            <h5 class="dlab-tilte text-uppercase">BELTS AND HOSES</h5>
+                                            <p>Essential parts vital to the function of your engine's cooling,
+                                                charging, and air conditioning systems </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-6">
+                                    <div class="icon-bx-wraper center m-b40">
+                                        <div class="icon-bx-sm bg-secondry m-b20"> <span class="icon-cell"><i
+                                                    class="ti-settings text-primary"></i></span> </div>
+                                        <div class="icon-content">
+                                            <h5 class="dlab-tilte text-uppercase">ENGINE DIAGNOSTICS</h5>
+                                            <p>Any type of computerized assessment used to identify problems
+                                                your car </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-6">
+                                    <div class="icon-bx-wraper center m-b10">
+                                        <div class="icon-bx-sm bg-secondry m-b20"> <span class="icon-cell"><i
+                                                    class="ti-pie-chart text-primary"></i></span> </div>
+                                        <div class="icon-content">
+                                            <h5 class="dlab-tilte text-uppercase">TIRE AND WHEEL SERVICES</h5>
+                                            <p>Tire tread isn’t the only indicator of problems</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- OUR SERVICES END-->
+
+                    <!-- Team member -->
+                    <div class="section-full bg-white content-inner">
+                        <div class="container">
+                            <div class="section-head text-center ">
+                                <h2 class="text-uppercase"> Meet The Team</h2>
+                                <div class="dlab-separator-outer ">
+                                    <div class="dlab-separator bg-secondry style-skew"></div>
+                                </div>
+                                <p>The team in AddedPower consists of many employees that are highly expert and have a big amount of knowledge in everything related to cars</p>
+                            </div>
+                            <div class="section-content text-center ">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-6 col-sm-6">
+                                        <div class="dlab-box m-b30">
+                                            <div class="dlab-media"> <a href="our-team.php"> <img width="358"
+                                                        height="460" alt="" src="images/our-team/team1.jpg"> </a>
+                                                <div class="dlab-info-has skew-has  bg-primary">
+                                                    <ul class="dlab-social-icon dez-border">
+                                                        <li><a class="fab fa-facebook-f"
+                                                                href="https://www.facebook.com/" target="blank"></a>
+                                                        </li>
+                                                        <li><a class="fab fa-twitter" href="https://www.twitter.com/"
+                                                                target="blank"></a></li>
+                                                        <li><a class="fab fa-linkedin-in"
+                                                                href="https://www.linkedin.com/" target="blank"></a>
+                                                        </li>
+                                                        <li><a class="fab fa-facebook-f"
+                                                                href="https://www.facebook.com/" target="blank"></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="p-a10">
+                                                <h4 class="dlab-title text-uppercase m-b5">Nashid Martines</h4>
+                                                <span class="dlab-member-position">Manager</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-6">
+                                        <div class="dlab-box m-b30">
+                                            <div class="dlab-media"> <a href="our-team.php"> <img width="358"
+                                                        height="460" alt="" src="images/our-team/team2.jpg"> </a>
+                                                <div class="dlab-info-has skew-has bg-primary">
+                                                    <ul class="dlab-social-icon dez-border">
+                                                        <li><a class="fab fa-facebook-f"
+                                                                href="https://www.facebook.com/" target="blank"></a>
+                                                        </li>
+                                                        <li><a class="fab fa-twitter" href="https://www.twitter.com/"
+                                                                target="blank"></a></li>
+                                                        <li><a class="fab fa-linkedin-in"
+                                                                href="https://www.linkedin.com/" target="blank"></a>
+                                                        </li>
+                                                        <li><a class="fab fa-facebook-f"
+                                                                href="https://www.facebook.com/" target="blank"></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="p-a10 bg-white">
+                                                <h4 class="dlab-title text-uppercase m-b5">Harry Jackman</h4>
+                                                <span class="dlab-member-position">Mechanical</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-6">
+                                        <div class="dlab-box m-b30">
+                                            <div class="dlab-media"> <a href="our-team.php"> <img width="358"
+                                                        height="460" alt="" src="images/our-team/team3.jpg"> </a>
+                                                <div class="dlab-info-has skew-has bg-primary">
+                                                    <ul class="dlab-social-icon dez-border">
+                                                        <li><a class="fab fa-facebook-f"
+                                                                href="https://www.facebook.com/" target="blank"></a>
+                                                        </li>
+                                                        <li><a class="fab fa-twitter" href="https://www.twitter.com/"
+                                                                target="blank"></a></li>
+                                                        <li><a class="fab fa-linkedin-in"
+                                                                href="https://www.linkedin.com/" target="blank"></a>
+                                                        </li>
+                                                        <li><a class="fab fa-facebook-f"
+                                                                href="https://www.facebook.com/" target="blank"></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="p-a10">
+                                                <h4 class="dlab-title text-uppercase m-b5">Hackson Willingham</h4>
+                                                <span class="dlab-member-position">Mechanical</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-6">
+                                        <div class="dlab-box m-b10">
+                                            <div class="dlab-media"> <a href="our-team.php"> <img width="358"
+                                                        height="460" alt="" src="images/our-team/team4.jpg"> </a>
+                                                <div class="dlab-info-has skew-has bg-primary">
+                                                    <ul class="dlab-social-icon dez-border">
+                                                        <li><a class="fab fa-facebook-f"
+                                                                href="https://www.facebook.com/" target="blank"></a>
+                                                        </li>
+                                                        <li><a class="fab fa-twitter" href="https://www.twitter.com/"
+                                                                target="blank"></a></li>
+                                                        <li><a class="fab fa-linkedin-in"
+                                                                href="https://www.linkedin.com/" target="blank"></a>
+                                                        </li>
+                                                        <li><a class="fab fa-facebook-f"
+                                                                href="https://www.facebook.com/" target="blank"></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="p-a10">
+                                                <h4 class="dlab-title text-uppercase m-b5">konne Backfield</h4>
+                                                <span class="dlab-member-position">Director</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Team member END -->
+
+                    <!-- Testimonials blog -->
+                    <div class="section-full overlay-black-middle bg-img-fix content-inner-1"
+                        style="background-image:url(images/background/bg11.jpg);">
+                        <div class="container">
+                            <div class="section-head text-white text-center">
+                                <h2 class="text-uppercase">What people are saying</h2>
+                                <div class="dlab-separator-outer ">
+                                    <div class="dlab-separator bg-white  style-skew"></div>
+                                </div>
+                            </div>
+                            <div class="section-content">
+                                <div class="testimonial-four owl-carousel owl-none owl-theme owl-dots-white-full">
+                                    <div class="item">
+                                        <div class="testimonial-4 testimonial-bg">
+                                            <div class="testimonial-pic"><img src="images/testimonials/userIcon.jpg"
+                                                    width="100" height="100" alt=""></div>
+                                            <div class="testimonial-text">
+                                                <p>Would highly recommend AddedPower! He was very professional, very helpful & had great prices. Will definitely come back </p>
+                                            </div>
+                                            <div class="testimonial-detail"> <strong class="testimonial-name">David
+                                                    Matin</strong> <span class="testimonial-position">Engineer</span>
+                                            </div>
+                                            <div class="quote-right"></div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="testimonial-4 testimonial-bg">
+                                            <div class="testimonial-pic"><img src="images/testimonials/userIcon.jpg"
+                                                    width="100" height="100" alt=""></div>
+                                            <div class="testimonial-text">
+                                                <p>Great shop! Was traveling through town and in a rush to find a good mechanic and these guys were above amazing! It’s hard to find a good honest mechanic and this is one of them! 10/10 would recommend </p>
+                                            </div>
+                                            <div class="testimonial-detail"> <strong class="testimonial-name">Matin
+                                                    Salva</strong> <span class="testimonial-position">Student</span>
+                                            </div>
+                                            <div class="quote-right"></div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="testimonial-4 testimonial-bg">
+                                            <div class="testimonial-pic"><img src="images/testimonials/userIcon.jpg"
+                                                    width="100" height="100" alt=""></div>
+                                            <div class="testimonial-text">
+                                                <p>Solid service. These guys are knowledgeable and professional. I will definitely come back with my Highlander
+
+                                                </p>
+                                            </div>
+                                            <div class="testimonial-detail"> <strong class="testimonial-name">Jack
+                                                    Martin</strong> <span class="testimonial-position">Doctor</span>
+                                            </div>
+                                            <div class="quote-right"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonials blog END -->
+                    <!-- Client logo -->
+                    <div class="section-full dlab-we-find bg-img-fix p-t50 p-b50 ">
+                        <div class="container">
+                            <div class="section-content">
+                                <div class="client-logo-carousel owl-carousel mfp-gallery gallery owl-btn-center-lr">
+                                    <div class="item">
+                                        <div class="ow-client-logo">
+                                            <div class="client-logo"><a href="#"><img
+                                                        src="images/client-logo/pirelli.png" alt=""></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="ow-client-logo">
+                                            <div class="client-logo"> <a href="#"><img
+                                                        src="images/client-logo/mobil.png" alt=""></a> </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="ow-client-logo">
+                                            <div class="client-logo"> <a href="#"><img
+                                                        src="images/client-logo/castrol.png" alt=""></a> </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="ow-client-logo">
+                                            <div class="client-logo"> <a href="#"><img
+                                                        src="images/client-logo/shell.png" alt=""></a> </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="ow-client-logo">
+                                            <div class="client-logo"> <a href="#"><img
+                                                        src="images/client-logo/continental.png" alt=""></a> </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="ow-client-logo">
+                                            <div class="client-logo"> <a href="#"><img
+                                                        src="images/client-logo/bosch.png" alt=""></a> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Client logo END -->
+>>>>>>> 349157852c51ebd17ef98cdfbec1e133136e6ce5
                 </div>
                 <!-- Our Projects END -->
                 <!-- OUR SERVICES -->
@@ -471,6 +1083,7 @@ include '../Includes/functions/functions.php';
                                             drying out</p>
                                     </div>
                                 </div>
+<<<<<<< HEAD
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="icon-bx-wraper center m-b40">
@@ -479,6 +1092,23 @@ include '../Includes/functions/functions.php';
                                         <h5 class="dlab-tilte text-uppercase">BRAKE REPAIR</h5>
                                         <p>From the brake pedal to hydraulic brake fluid, AddedPower will take care
                                             of it </p>
+=======
+
+                                <div class="col-lg-4 col-md-3 col-sm-3 footer-col-4">
+                                    <div class="widget widget_services">
+                                        <h4 class="m-b15 text-uppercase">Our services</h4>
+                                        <div class="dlab-separator-outer m-b10">
+                                            <div class="dlab-separator bg-white style-skew"></div>
+                                        </div>
+                                        <ul>
+                                            <li><a href="engine-diagnostics.php">Engine Diagnostics</a></li>
+                                            <li><a href="lube-oil-and-filters.php">Lube, Oil and Filters</a></li>
+                                            <li><a href="belts-and-hoses.php">Belts and Hoses</a></li>
+                                            <li><a href="air-conditioning.php">Air Conditioning</a></li>
+                                            <li><a href="brake-repair.php">Brake Repair</a></li>
+                                            <li><a href="tire-and-wheel-services.php">Tire And Wheel Services</a></li>
+                                        </ul>
+>>>>>>> 349157852c51ebd17ef98cdfbec1e133136e6ce5
                                     </div>
                                 </div>
                             </div>
@@ -580,6 +1210,7 @@ include '../Includes/functions/functions.php';
                                         </div>
                                     </div>
                                 </div>
+<<<<<<< HEAD
                                 <div class="col-lg-3 col-md-6 col-sm-6">
                                     <div class="dlab-box m-b30">
                                         <div class="dlab-media"> <a href="our-team.html"> <img width="358" height="460" alt="" src="images/our-team/team3.jpg"> </a>
@@ -621,6 +1252,12 @@ include '../Includes/functions/functions.php';
                                             <span class="dlab-member-position">Director</span>
                                         </div>
                                     </div>
+=======
+                                <div class="col-lg-4 col-md-4 text-right">
+                                    <a href="about-2.php"> About</a>
+                                    <a href="faq-1.php"> FAQs</a>
+                                    <a href="contact.php"> Contact</a>
+>>>>>>> 349157852c51ebd17ef98cdfbec1e133136e6ce5
                                 </div>
                             </div>
                         </div>

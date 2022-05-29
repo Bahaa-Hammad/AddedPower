@@ -38,7 +38,7 @@
         <!-- Content -->
         <div class="page-content dlab-login bg-secondry">
             <div class="top-head logo-white text-center logo-header">
-                <a href="index.html">
+                <a href="index.php">
                     <img src="images/logo.png" alt="AddedPowerLogo" />
                 </a>
             </div>
@@ -59,6 +59,19 @@
                     <div class="form-group">
                         <input name="uId" required="" class="form-control" placeholder="User Name" type="text" />
                     </div>
+
+                    <?php
+
+                    if(isset($_GET["error"])){
+                        if($_GET["error"] == "takenID"){
+                            echo '<div class="alert alert-danger alert-dismissible fade show">
+                            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                            <strong>This username is already used!</strong></div>';
+                        }
+                    }
+
+                    ?>
+
                     <div class="form-group">
                         <input name="email" required="" class="form-control" placeholder="Email Id" type="text" />
                     </div>
@@ -107,9 +120,7 @@
     <script src="js/custom.min.js"></script><!-- CUSTOM FUCTIONS  -->
     <script src="js/dz.carousel.min.js"></script><!-- SORTCODE FUCTIONS  -->
     <script src="js/dz.ajax.js"></script><!-- CONTACT JS -->
-
-
-
+    
 </body>
 
 </html>

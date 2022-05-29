@@ -75,7 +75,7 @@ function uidTaken($conn,$username, $email){ // Used also in login functions
     $stmt = mysqli_stmt_init($conn); // Initialize a statement and return an object to use with stmt_prepare():
 
     if(!mysqli_stmt_prepare($stmt, $sql)){
-        header("location: sign-up.html?error=failedSqlStmt");
+        header("location: sign-up.php?error=failedSqlStmt");
         exit();
     }
 
@@ -109,7 +109,7 @@ function createUser($conn,$fname,$lname,$email,$tel,$username,$pwd){
     $stmt = mysqli_stmt_init($conn); // Initialize a statement and return an object to use with stmt_prepare():
 
     if(!mysqli_stmt_prepare($stmt, $sql)){
-        header("location: sign-up.html?error=failedSqlStmt");
+        header("location: sign-up.php?error=failedSqlStmt");
         exit();
     }
 

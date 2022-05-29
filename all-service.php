@@ -78,13 +78,13 @@
                         <div class="col-lg-3 col-md-4 col-sm-6">
                             <div class="widget_services style-2 m-b40">
                                 <ul>
-                                    <li class="active"><a href="all-service.html">ALL SERVICES</a> </li>
-                                    <li><a href="engine-diagnostics.html">ENGINE DIAGNOSTICS</a> </li>
-                                    <li><a href="lube-oil-and-filters.html">LUBE OIL AND FILTERS</a> </li>
-                                    <li><a href="belts-and-hoses.html">BELTS AND HOSES</a> </li>
-                                    <li><a href="air-conditioning.html">AIR CONDITIONING</a> </li>
-                                    <li><a href="brake-repair.html">BRAKE REPAIR</a> </li>
-                                    <li><a href="tire-and-wheel-services.html">TIRE AND WHEEL SERVICES</a> </li>
+                                    <li class="active"><a href="all-service.php">ALL SERVICES</a> </li>
+                                    <li><a href="engine-diagnostics.php">ENGINE DIAGNOSTICS</a> </li>
+                                    <li><a href="lube-oil-and-filters.php">LUBE OIL AND FILTERS</a> </li>
+                                    <li><a href="belts-and-hoses.php">BELTS AND HOSES</a> </li>
+                                    <li><a href="air-conditioning.php">AIR CONDITIONING</a> </li>
+                                    <li><a href="brake-repair.php">BRAKE REPAIR</a> </li>
+                                    <li><a href="tire-and-wheel-services.php">TIRE AND WHEEL SERVICES</a> </li>
                                 </ul>
                             </div>
 
@@ -109,14 +109,14 @@
                                         <div class="dlab-media"> <a href="#"><img src="images/our-work/engine_dig.jpg"
                                                     alt=""></a> </div>
                                         <div class="dlab-info">
-                                            <h4 class="dlab-title m-t20"><a href="engine-diagnostics.html">Engine
+                                            <h4 class="dlab-title m-t20"><a href="engine-diagnostics.php">Engine
                                                     Diagnostics</a></h4>
                                             <p>Learn what is malfunctioning with your vehicle so you can make an
                                                 educated
                                                 decision that will put you back on the road safely and with confidence.
                                                 <br> <br> <!-- br is for button alignment purposes -->
                                             </p>
-                                            <a href="engine-diagnostics.html" class="site-button">More</a>
+                                            <a href="engine-diagnostics.php" class="site-button">More</a>
                                         </div>
                                     </div>
                                 </div>
@@ -125,13 +125,13 @@
                                         <div class="dlab-media"> <a href="#"><img src="images/our-work/oil_change.jpg"
                                                     alt=""></a> </div>
                                         <div class="dlab-info">
-                                            <h4 class="dlab-title m-t20"><a href="lube-oil-and-filters.html">Lube Oil
+                                            <h4 class="dlab-title m-t20"><a href="lube-oil-and-filters.php">Lube Oil
                                                     and Filters</a></h4>
                                             <p>Oil is the lifeblood of your engine. Without the cleaning action of new
                                                 oil,
                                                 carbon and varnish buildup is toxic to the engine. <br> <br> </p>
                                             <!-- br is for button alignment purposes -->
-                                            <a href="lube-oil-and-filters.html" class="site-button">More</a>
+                                            <a href="lube-oil-and-filters.php" class="site-button">More</a>
                                         </div>
                                     </div>
                                 </div>
@@ -140,13 +140,13 @@
                                         <div class="dlab-media"> <a href="#"><img
                                                     src="images/our-work/betls_and_hoses.png" alt=""></a> </div>
                                         <div class="dlab-info">
-                                            <h4 class="dlab-title m-t20"><a href="belts-and-hoses.html">Belts and
+                                            <h4 class="dlab-title m-t20"><a href="belts-and-hoses.php">Belts and
                                                     Hoses</a></h4>
                                             <p>Car belts and hoses are essential to the functioning of your vehicle but
                                                 are often overlooked.
                                                 At AddedPower, you can get a professional belt and hose maintenance
                                                 and replacement service. </p>
-                                            <a href="belts-and-hoses.html" class="site-button">More</a>
+                                            <a href="belts-and-hoses.php" class="site-button">More</a>
                                         </div>
                                     </div>
                                 </div>
@@ -155,11 +155,11 @@
                                         <div class="dlab-media"> <a href="#"><img
                                                     src="images/our-work/Air_condiingin.jpg" alt=""></a> </div>
                                         <div class="dlab-info">
-                                            <h4 class="dlab-title m-t20"><a href="air-conditioning.html">Air
+                                            <h4 class="dlab-title m-t20"><a href="air-conditioning.php">Air
                                                     Conditioning</a></h4>
                                             <p>We service your car AC or heater to avoid drying out and cracking.
                                                 with no leaky valves or blockages. <br> <br> </p>
-                                            <a href="air-conditioning.html" class="site-button">More</a>
+                                            <a href="air-conditioning.php" class="site-button">More</a>
                                         </div>
                                     </div>
                                 </div>
@@ -168,12 +168,12 @@
                                         <div class="dlab-media"> <a href="#"><img src="images/our-work/break_rapair.jpg"
                                                     alt=""></a> </div>
                                         <div class="dlab-info">
-                                            <h4 class="dlab-title m-t20"><a href="brake-repair.html">Brake Repair </a>
+                                            <h4 class="dlab-title m-t20"><a href="brake-repair.php">Brake Repair </a>
                                             </h4>
                                             <p>AddedPower technicians know every part of your brake system inside
                                                 and out and can perform brake repair on any make and
                                                 model. </p>
-                                            <a href="brake-repair.html" class="site-button">More</a>
+                                            <a href="brake-repair.php" class="site-button">More</a>
                                         </div>
                                     </div>
                                 </div>
@@ -182,12 +182,12 @@
                                         <div class="dlab-media"> <a href="#"><img
                                                     src="images/our-work/tier_servises.jpg" alt=""></a> </div>
                                         <div class="dlab-info">
-                                            <h4 class="dlab-title m-t20"><a href="tire-and-wheel-services.html">Tire and
+                                            <h4 class="dlab-title m-t20"><a href="tire-and-wheel-services.php">Tire and
                                                     Wheel Services</a></h4>
                                             <p>We inspect, rotate, and balance your tires, as scheduled by your
                                                 manufacturer
                                                 & make sure they are properly installed. </p>
-                                            <a href="tire-and-wheel-services.html" class="site-button">More</a>
+                                            <a href="tire-and-wheel-services.php" class="site-button">More</a>
                                         </div>
                                     </div>
                                 </div>

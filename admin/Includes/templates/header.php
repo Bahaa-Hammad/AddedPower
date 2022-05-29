@@ -68,6 +68,14 @@
 		  				<span>Services</span>
 		  			</a>
 	  			</li>
+
+	  			<li class="nav-item">
+					<a class="nav-link" href="servicesGraph.php">
+		  				<i class="fa fa-edit"></i>
+		  				<span>Statistics</span>
+		  			</a>
+	  			</li>
+
 	  			<li class="nav-item">
 					<a class="nav-link" href="#">
 		  				<i class="far fa-image"></i>
@@ -154,7 +162,7 @@
 								  		<i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
 								  		Profile
 									</a>
-									
+
 									<div class="dropdown-divider"></div>
 									<a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
 								  		<i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>

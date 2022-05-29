@@ -101,7 +101,6 @@
                 $client_last_name = test_input($_SESSION['usersLastName']);
                 $client_email = test_input($_SESSION['usersEmail']);
                 $client_phone_number = test_input($_SESSION['usersPhone']);
-
                 $con->beginTransaction();
 
                 try
@@ -137,7 +136,7 @@
                     $appointment_id = $stmtgetCurrentAppointmentID->fetch();
                     
                     $stmt_appointment = $con->prepare("insert into appointments(date_created, client_id, employee_id, start_time, end_time_expected ) values(?, ?, ?, ?, ?)");
-                    $stmt_appointment->execute(array(Date("Y-m-d H:i"),$client_id[0],$selected_employee,$start_time,$end_time));
+                    $stmt_appointment->execute(array(Date("Y-m-d H:i"),$client_id,$selected_employee,$start_time,$end_time));  // Note it was $client_id[0] --- not working for a uswe to have multiple appoinments
 
                     foreach($selected_services as $service)
                     {
