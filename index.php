@@ -792,7 +792,7 @@
                                                 </div>
                                             </div>
                                             <div class="p-a10">
-                                                <h4 class="dlab-title text-uppercase m-b5">Nashid Martines</h4>
+                                                <h4 class="dlab-title text-uppercase m-b5">Abdullah Ahmed</h4>
                                                 <span class="dlab-member-position">Manager</span>
                                             </div>
                                         </div>
@@ -818,7 +818,7 @@
                                                 </div>
                                             </div>
                                             <div class="p-a10 bg-white">
-                                                <h4 class="dlab-title text-uppercase m-b5">Harry Jackman</h4>
+                                                <h4 class="dlab-title text-uppercase m-b5">Mohammed Hussain</h4>
                                                 <span class="dlab-member-position">Mechanical</span>
                                             </div>
                                         </div>
@@ -844,7 +844,7 @@
                                                 </div>
                                             </div>
                                             <div class="p-a10">
-                                                <h4 class="dlab-title text-uppercase m-b5">Hackson Willingham</h4>
+                                                <h4 class="dlab-title text-uppercase m-b5">Hassan Ahmed</h4>
                                                 <span class="dlab-member-position">Mechanical</span>
                                             </div>
                                         </div>
@@ -870,7 +870,7 @@
                                                 </div>
                                             </div>
                                             <div class="p-a10">
-                                                <h4 class="dlab-title text-uppercase m-b5">konne Backfield</h4>
+                                                <h4 class="dlab-title text-uppercase m-b5">Ahmed Salem</h4>
                                                 <span class="dlab-member-position">Director</span>
                                             </div>
                                         </div>
@@ -900,8 +900,7 @@
                                             <div class="testimonial-text">
                                                 <p>Would highly recommend AddedPower! He was very professional, very helpful & had great prices. Will definitely come back </p>
                                             </div>
-                                            <div class="testimonial-detail"> <strong class="testimonial-name">David
-                                                    Matin</strong> <span class="testimonial-position">Engineer</span>
+                                            <div class="testimonial-detail"> <strong class="testimonial-name">Abdulmalik Mohammed</strong> <span class="testimonial-position">Engineer</span>
                                             </div>
                                             <div class="quote-right"></div>
                                         </div>
@@ -913,8 +912,7 @@
                                             <div class="testimonial-text">
                                                 <p>Great shop! Was traveling through town and in a rush to find a good mechanic and these guys were above amazing! It’s hard to find a good honest mechanic and this is one of them! 10/10 would recommend </p>
                                             </div>
-                                            <div class="testimonial-detail"> <strong class="testimonial-name">Matin
-                                                    Salva</strong> <span class="testimonial-position">Student</span>
+                                            <div class="testimonial-detail"> <strong class="testimonial-name">Alaa Hammad</strong> <span class="testimonial-position">Student</span>
                                             </div>
                                             <div class="quote-right"></div>
                                         </div>
@@ -928,8 +926,7 @@
 
                                                 </p>
                                             </div>
-                                            <div class="testimonial-detail"> <strong class="testimonial-name">Jack
-                                                    Martin</strong> <span class="testimonial-position">Doctor</span>
+                                            <div class="testimonial-detail"> <strong class="testimonial-name">Rayyan Abdullah</strong> <span class="testimonial-position">Doctor</span>
                                             </div>
                                             <div class="quote-right"></div>
                                         </div>
