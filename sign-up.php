@@ -93,7 +93,7 @@
                     </div>
                     <div class="form-group text-left ">
                         <a class="site-button outline gray" data-bs-toggle="tab" href="#login">Back</a>
-                        <input type="submit" name="submit" value="submit" class="site-button float-end">Submit</button>
+                        <input type="submit" name="submit" value="submit" class="site-button float-end"></button>
                     </div>
                 </form>
             </div>
@@ -120,7 +120,6 @@
     <script src="js/custom.min.js"></script><!-- CUSTOM FUCTIONS  -->
     <script src="js/dz.carousel.min.js"></script><!-- SORTCODE FUCTIONS  -->
     <script src="js/dz.ajax.js"></script><!-- CONTACT JS -->
-    
 </body>
 
 </html>
