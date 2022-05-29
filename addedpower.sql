@@ -211,6 +211,22 @@ INSERT INTO `users` (`usersId`, `usersFirstName`, `usersLastName`, `usersEmail`,
 --
 
 --
+-- Table structure for table `tbl_image`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_image` (
+  `image_id` int(11) NOT NULL,
+  `image_name` varchar(250) NOT NULL,
+  `image_description` varchar(250) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
+
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+
+--
 -- Indexes for table `addedpower_admin`
 --
 ALTER TABLE `addedpower_admin`
@@ -272,6 +288,13 @@ ALTER TABLE `users`
   ADD PRIMARY KEY (`usersId`);
 
 --
+-- Indexes for table `tbl_image`
+--
+ALTER TABLE `tbl_image`
+  ADD PRIMARY KEY (`image_id`);
+
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -322,6 +345,13 @@ ALTER TABLE `service_categories`
 --
 ALTER TABLE `users`
   MODIFY `usersId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
+-- AUTO_INCREMENT for table `tbl_image`
+--
+ALTER TABLE `tbl_image`
+  MODIFY `image_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=1;
+
 
 --
 -- Constraints for dumped tables
