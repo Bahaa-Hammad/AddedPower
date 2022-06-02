@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 27, 2022 at 04:09 PM
+-- Generation Time: Jun 02, 2022 at 08:48 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.4
 
@@ -60,6 +60,19 @@ CREATE TABLE `appointments` (
   `cancellation_reason` text DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Dumping data for table `appointments`
+--
+
+INSERT INTO `appointments` (`appointment_id`, `date_created`, `client_id`, `employee_id`, `start_time`, `end_time_expected`, `canceled`, `cancellation_reason`) VALUES
+(29, '2022-06-02 17:32:00', 1, 1, '2022-06-03 13:00:00', '2022-06-03 18:00:00', 0, NULL),
+(30, '2022-06-02 17:32:00', 1, 2, '2022-06-06 06:00:00', '2022-06-06 08:00:00', 0, NULL),
+(31, '2022-06-02 17:32:00', 1, 3, '2022-06-10 06:00:00', '2022-06-10 10:40:00', 0, NULL),
+(32, '2022-06-02 17:33:00', 1, 4, '2022-06-04 07:00:00', '2022-06-04 08:00:00', 0, NULL),
+(33, '2022-06-02 17:33:00', 1, 2, '2022-06-11 06:45:00', '2022-06-11 08:45:00', 0, NULL),
+(34, '2022-06-02 17:42:00', 2, 3, '2022-06-10 07:15:00', '2022-06-10 09:15:00', 0, NULL),
+(35, '2022-06-02 17:43:00', 3, 1, '2022-06-07 06:00:00', '2022-06-07 08:00:00', 0, NULL);
+
 -- --------------------------------------------------------
 
 --
@@ -73,6 +86,15 @@ CREATE TABLE `clients` (
   `phone_number` varchar(30) NOT NULL,
   `client_email` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `clients`
+--
+
+INSERT INTO `clients` (`client_id`, `first_name`, `last_name`, `phone_number`, `client_email`) VALUES
+(1, 'Bahaa', 'Hammad', '0555283517', 'BHAMMAD@gmail.com'),
+(2, '', 'rain', '', 'rain@gmail.com'),
+(3, 'mey', 'mey', '123', 'mey@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -93,7 +115,10 @@ CREATE TABLE `employees` (
 --
 
 INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `phone_number`, `email`) VALUES
-(1, 'Harry', 'Jackman', '0555283518', 'HJackman@addedPower.com');
+(1, 'Abdullah', 'Ahmed', '0555283518', 'AAhmed@addedPower.com'),
+(2, 'Mohammed', 'Hussain', '0555283517', 'MHussain@addedPower.com'),
+(3, 'Hassan', 'Ahmed', '0555283519', 'HAhmed@addedPower.com'),
+(4, 'Ahmed', 'Salem', '0555283516', 'ASalem@addedPower.com');
 
 -- --------------------------------------------------------
 
@@ -114,11 +139,51 @@ CREATE TABLE `employees_schedule` (
 --
 
 INSERT INTO `employees_schedule` (`id`, `employee_id`, `day_id`, `from_hour`, `to_hour`) VALUES
-(2, 1, 1, '09:00:00', '18:00:00'),
-(3, 1, 2, '08:00:00', '12:00:00'),
-(4, 1, 3, '09:00:00', '18:00:00'),
-(5, 1, 4, '09:00:00', '18:00:00'),
-(6, 1, 7, '09:00:00', '18:00:00');
+(7, 1, 1, '09:00:00', '18:00:00'),
+(8, 1, 2, '08:00:00', '12:00:00'),
+(9, 1, 3, '09:00:00', '18:00:00'),
+(10, 1, 4, '09:00:00', '18:00:00'),
+(11, 1, 5, '16:00:00', '23:00:00'),
+(12, 1, 6, '09:00:00', '18:00:00'),
+(13, 1, 7, '09:00:00', '18:00:00'),
+(14, 2, 1, '09:00:00', '18:00:00'),
+(15, 2, 2, '09:00:00', '18:00:00'),
+(16, 2, 3, '09:00:00', '18:00:00'),
+(17, 2, 4, '09:00:00', '18:00:00'),
+(18, 2, 6, '09:00:00', '18:00:00'),
+(19, 2, 7, '09:00:00', '18:00:00'),
+(20, 3, 1, '09:00:00', '18:00:00'),
+(21, 3, 2, '09:00:00', '18:00:00'),
+(22, 3, 3, '09:00:00', '18:00:00'),
+(23, 3, 4, '09:00:00', '18:00:00'),
+(24, 3, 5, '09:00:00', '18:00:00'),
+(25, 3, 7, '09:00:00', '18:00:00'),
+(26, 4, 6, '09:00:00', '18:00:00');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `images`
+--
+
+CREATE TABLE `images` (
+  `img_id` int(5) NOT NULL,
+  `img` varchar(225) NOT NULL,
+  `img_path` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `images`
+--
+
+INSERT INTO `images` (`img_id`, `img`, `img_path`) VALUES
+(1, 'Slider_1', '../banners/Slider1.jpg'),
+(2, 'Slider_2\r\n', '../banners/Slider2.jpg'),
+(3, 'Slider_3', '../banners/Slider3.jpg'),
+(4, 'Emp_Manager', '../banners/team1.jpg'),
+(5, 'Emp_Mechanical_1', '../banners/team2.jpg'),
+(6, 'Emp_Mechanical_2\r\n', '../banners/team3.jpg'),
+(7, 'Director', '../banners/team4.jpg');
 
 -- --------------------------------------------------------
 
@@ -158,6 +223,19 @@ CREATE TABLE `services_booked` (
   `service_id` int(5) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Dumping data for table `services_booked`
+--
+
+INSERT INTO `services_booked` (`appointment_id`, `service_id`) VALUES
+(29, 1),
+(30, 2),
+(31, 3),
+(32, 4),
+(33, 5),
+(34, 5),
+(35, 5);
+
 -- --------------------------------------------------------
 
 --
@@ -181,6 +259,18 @@ INSERT INTO `service_categories` (`category_id`, `category_name`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `tbl_image`
+--
+
+CREATE TABLE `tbl_image` (
+  `image_id` int(11) NOT NULL,
+  `image_name` varchar(250) NOT NULL,
+  `image_description` varchar(250) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `users`
 --
 
@@ -191,6 +281,7 @@ CREATE TABLE `users` (
   `usersEmail` varchar(128) NOT NULL,
   `usersPhone` varchar(30) NOT NULL,
   `usersUid` varchar(128) NOT NULL,
+  `profile_image` varchar(225) NOT NULL,
   `usersPwd` varchar(128) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -198,33 +289,22 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`usersId`, `usersFirstName`, `usersLastName`, `usersEmail`, `usersPhone`, `usersUid`, `usersPwd`) VALUES
-(1, '', 'BahaaHammad', 'Bahaahussamhammad@gmail.com', '', 'BahaaHammad', 'qwerty'),
-(2, '', 'Mark Cuban', 'Mcuban@gmail.com', '', 'MCuban', '$2y$10$dFBYai6qoI7hS7fOZFL/QeGrS86SUgTV3Ytjfqs7ujuZoT/Gvo8ua'),
-(3, '', 'Harry Styles', 'HStyles@gmail.com', '', 'HStyles', '$2y$10$6TwqLHakApnJooNPxJWBcON5dhj37VMQKgiZ6g9OkUepUA4zwkDoW'),
-(4, '', 'rain', 'rain@gmail.com', '', 'Rain', '$2y$10$Iu.uSFst/SSFshaQpLm5G.G5x3P8A2zI2QGV.bxr4EwFIuvRpZRxi'),
-(5, '', 'Steve ', 'SteveM@gmail.com', '', 'SteveM', '$2y$10$4ASHII.DqRR5Z99JHIsmrusHhOdCtO3FjN3st2PX7e/4NnF06.hoG'),
-(6, 'Greg', 'House', 'House@gmail.com', '0555929292', 'House', '$2y$10$Om.EHqhIz1G5Dwjm.yLC.O6eA3IBARQiqGhN8PmFMexF5wWP99fpi');
+INSERT INTO `users` (`usersId`, `usersFirstName`, `usersLastName`, `usersEmail`, `usersPhone`, `usersUid`, `profile_image`, `usersPwd`) VALUES
+(1, '', 'BahaaHammad', 'Bahaahussamhammad@gmail.com', '', 'BahaaHammad', '', 'qwerty'),
+(2, '', 'Mark Cuban', 'Mcuban@gmail.com', '', 'MCuban', '', '$2y$10$dFBYai6qoI7hS7fOZFL/QeGrS86SUgTV3Ytjfqs7ujuZoT/Gvo8ua'),
+(3, '', 'Harry Styles', 'HStyles@gmail.com', '', 'HStyles', '', '$2y$10$6TwqLHakApnJooNPxJWBcON5dhj37VMQKgiZ6g9OkUepUA4zwkDoW'),
+(4, '', 'rain', 'rain@gmail.com', '', 'Rain', 'uploads/pfpTest.png', '$2y$10$Iu.uSFst/SSFshaQpLm5G.G5x3P8A2zI2QGV.bxr4EwFIuvRpZRxi'),
+(5, '', 'Steve ', 'SteveM@gmail.com', '', 'SteveM', '', '$2y$10$4ASHII.DqRR5Z99JHIsmrusHhOdCtO3FjN3st2PX7e/4NnF06.hoG'),
+(6, 'Greg', 'House', 'House@gmail.com', '0555929292', 'House', '', '$2y$10$Om.EHqhIz1G5Dwjm.yLC.O6eA3IBARQiqGhN8PmFMexF5wWP99fpi'),
+(7, 'Moh', 'Moh', 'Moh@gmail.com', '0909009', 'Moh', '', '$2y$10$zwlndOlKZfwvn43P.l13VOyOtLssHYjM3uxkQ.gQgGDdD4uB2QB7y'),
+(8, 'x', 'y', 'xy@gmail.com', '121212', 'xy', '', '$2y$10$VZCAQMKtse6j.gQpKYfiIuxK19ATeBZkFnXhTFUv5yP2sHzkf.fI6'),
+(9, 'Randy', 'House', 'Randy@gmail.com', '123456654321', 'Randy', '', '$2y$10$zn1lYSY3uVkvvrBUBr8hUOpKm4LlloSVbJ6G2gx9VAdmHSLt26GEK'),
+(10, 'mey', 'mey', 'mey@gmail.com', '123', 'mey', 'uploads/pfpTest.png', '$2y$10$GLiKNydi.IobqjCtyJ67s.rBzrh60rDW1.MNJYmlRY31ZIh3kcy3q'),
+(11, 'Bahaa', 'Hammad', 'BHAMMAD@gmail.com', '0555283517', 'BHammad', 'uploads/bah.jpg', '$2y$10$hF86goT66H/UMDN4PIUwmemiEpiUJ9DR8NvIZ7dUVsYPOQnrrG2Ie');
 
 --
 -- Indexes for dumped tables
 --
-
---
--- Table structure for table `tbl_image`
---
-
-CREATE TABLE IF NOT EXISTS `tbl_image` (
-  `image_id` int(11) NOT NULL,
-  `image_name` varchar(250) NOT NULL,
-  `image_description` varchar(250) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
-
-
---
--- AUTO_INCREMENT for dumped tables
---
-
 
 --
 -- Indexes for table `addedpower_admin`
@@ -262,6 +342,12 @@ ALTER TABLE `employees_schedule`
   ADD KEY `FK_emp` (`employee_id`);
 
 --
+-- Indexes for table `images`
+--
+ALTER TABLE `images`
+  ADD PRIMARY KEY (`img_id`);
+
+--
 -- Indexes for table `services`
 --
 ALTER TABLE `services`
@@ -282,17 +368,16 @@ ALTER TABLE `service_categories`
   ADD PRIMARY KEY (`category_id`);
 
 --
--- Indexes for table `users`
---
-ALTER TABLE `users`
-  ADD PRIMARY KEY (`usersId`);
-
---
 -- Indexes for table `tbl_image`
 --
 ALTER TABLE `tbl_image`
   ADD PRIMARY KEY (`image_id`);
 
+--
+-- Indexes for table `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`usersId`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -308,25 +393,31 @@ ALTER TABLE `addedpower_admin`
 -- AUTO_INCREMENT for table `appointments`
 --
 ALTER TABLE `appointments`
-  MODIFY `appointment_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `appointment_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
 
 --
 -- AUTO_INCREMENT for table `clients`
 --
 ALTER TABLE `clients`
-  MODIFY `client_id` int(5) NOT NULL AUTO_INCREMENT;
+  MODIFY `client_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `employees`
 --
 ALTER TABLE `employees`
-  MODIFY `employee_id` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `employee_id` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `employees_schedule`
 --
 ALTER TABLE `employees_schedule`
-  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+
+--
+-- AUTO_INCREMENT for table `images`
+--
+ALTER TABLE `images`
+  MODIFY `img_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `services`
@@ -341,17 +432,16 @@ ALTER TABLE `service_categories`
   MODIFY `category_id` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table `users`
---
-ALTER TABLE `users`
-  MODIFY `usersId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
-
---
 -- AUTO_INCREMENT for table `tbl_image`
 --
 ALTER TABLE `tbl_image`
-  MODIFY `image_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=1;
+  MODIFY `image_id` int(11) NOT NULL AUTO_INCREMENT;
 
+--
+-- AUTO_INCREMENT for table `users`
+--
+ALTER TABLE `users`
+  MODIFY `usersId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- Constraints for dumped tables
