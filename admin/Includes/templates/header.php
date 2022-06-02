@@ -74,6 +74,13 @@
 		  				<span>Site Banners</span>
 		  			</a>
 	  			</li>
+				
+	  			<li class="nav-item">
+					<a class="nav-link" href="servicesGraph.php">
+		  				<i class="fa fa-edit"></i>
+		  				<span>Statistics</span>
+		  			</a>
+	  			</li>
 			  	
 
 	  			<!-- Divider -->

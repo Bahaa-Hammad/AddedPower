@@ -192,6 +192,10 @@ function loginUser($conn,$username,$pwd){
         $_SESSION['profile_image'] = $uidTaken['profile_image'];
         $_SESSION['userid'] = $uidTaken['usersId'];
         $_SESSION['useruid'] = $uidTaken['usersUid'];
+        $_SESSION['usersFirstName'] = $uidTaken['usersFirstName'];
+        $_SESSION['usersLastName'] = $uidTaken['usersLastName'];
+        $_SESSION['usersEmail'] = $uidTaken['usersEmail'];
+        $_SESSION['usersPhone'] = $uidTaken['usersPhone'];
         
 
         header("location: index.php");
