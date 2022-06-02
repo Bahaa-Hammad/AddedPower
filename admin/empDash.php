@@ -23,6 +23,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AddedPower - Employee Panel</title>
+
+    <!-- FAVICONS ICON -->
+    <link rel="icon" href="../images/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.png" />
 </head>
 <body>
         <!-- Begin Page Content -->
@@ -48,7 +52,7 @@
 					  			<div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
 					  				Total Clients
 					  			</div>
-					  			<div class="h5 mb-0 font-weight-bold text-gray-800"><?php echo countItems("client_id","clients")?></div>
+					  			<div class="h5 mb-0 font-weight-bold text-gray-800"><?php echo countItems("employee_id","appointments")?></div>
 							</div>
 							<div class="col-auto">
 					  			<i class="bs bs-boy fa-2x text-gray-300"></i>
@@ -66,7 +70,7 @@
 				  		<div class="row no-gutters align-items-center">
 							<div class="col mr-2">
 					  			<div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-					  				Appointments
+					  				Total Appointments
 					  			</div>
 					  			<div class="h5 mb-0 font-weight-bold text-gray-800"><?php echo countItems("appointment_id","appointments")?></div>
 							</div>

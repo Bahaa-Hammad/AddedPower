@@ -41,7 +41,7 @@
 
 			  	<!-- Nav Item - Dashboard -->
 			  	<li class="nav-item active">
-					<a class="nav-link" href="index.php">
+					<a class="nav-link" href="empDash.php">
 				  		<i class="fas fa-fw fa-tachometer-alt"></i>
 				  		<span>Empolyee Dashboard</span>
 				  	</a>
@@ -50,20 +50,6 @@
 	  			<!-- Divider -->
 	  			<hr class="sidebar-divider">
 
-
-			  	
-
-	  			<!-- Nav Item - Charts -->
-	  			<li class="nav-item">
-					<a class="nav-link" href="clients.php">
-		  				<i class="far fa-address-card"></i>
-		  				<span>Clients</span>
-		  			</a>
-	  			</li>
-	  	
-	  
-	  			<!-- Divider -->
-	  			<hr class="sidebar-divider d-none d-md-block">
 
 	  			<!-- Sidebar Toggler (Sidebar) -->
 	  			<div class="text-center d-none d-md-inline">

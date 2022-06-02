@@ -83,6 +83,11 @@ session_start();
                             <?php
 
                             if(isset($_SESSION['useruid'])){
+
+                                 echo ' <div class="extra-cell">
+                                <a href="profilePage.php"><button class="site-button m-r15"
+                                        type="button">Profile</button></a>
+                            </div>';
                                 echo ' <div class="extra-cell">
                                 <a href="logout.php"><button class="site-button m-r15"
                                         type="button">Logout</button></a>
@@ -110,8 +115,6 @@ session_start();
 
                                 <li> <a href="shop-product-2.php">Shop</a></li>
 
-                                <li> <a href="#OurProcess">Our Process</a> </li>
-
                                 <li> <a href="faq-1.php">FAQs</a> </li>
 
                                 <li> <a href="contact.php">Contact us</a> </li>
@@ -123,6 +126,7 @@ session_start();
                 </div>
             </div>
             <!-- main header END -->
+            <br>
         </header>
         <!-- header END -->
 

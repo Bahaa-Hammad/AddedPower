@@ -11,9 +11,9 @@
 	{
 		global $pageTitle;
 		if(isset($pageTitle))
-			echo $pageTitle.' | Barbershop Salon';
+			echo $pageTitle.' | AddedPower';
 		else
-			echo "Barbershop | Barbershop Salon";
+			echo "AddedPower | AddedPower Shop";
 	}
 
 	/*
@@ -33,7 +33,6 @@
 		
 		return $stat_->fetchColumn();
 	}
-
     /*
 		=============================================================
 		** Check Items Function

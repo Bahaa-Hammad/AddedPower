@@ -45,7 +45,7 @@
 				style="background-image:url(images/background/productsBanner.jpg);">
 				<div class="container">
 					<div class="dlab-bnr-inr-entry">
-						<h1 class="text-white">Shop </h1>
+						<h1 class="text-white">Shop - Coming Soon</h1>
 					</div>
 				</div>
 			</div>

@@ -189,12 +189,11 @@ function loginUser($conn,$username,$pwd){
 
         // initialize sessions superglobals variables:
         
+        $_SESSION['profile_image'] = $uidTaken['profile_image'];
         $_SESSION['userid'] = $uidTaken['usersId'];
-        $_SESSION['usersFirstName'] = $uidTaken['usersFirstName'];
-        $_SESSION['usersLastName'] = $uidTaken['usersLastName'];
-        $_SESSION['usersEmail'] = $uidTaken['usersEmail'];
-        $_SESSION['usersPhone'] = $uidTaken['usersPhone'];
         $_SESSION['useruid'] = $uidTaken['usersUid'];
+        
+
         header("location: index.php");
         exit();
     }

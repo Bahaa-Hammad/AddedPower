@@ -30,37 +30,44 @@
     <link class="skin" rel="stylesheet" type="text/css" href="css/skin/skin-1.css">
     <link rel="stylesheet" type="text/css" href="css/templete.min.css">
 
+
+        <!-- Font Awesome -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.css"
+    rel="stylesheet"
+    />
+
 </head>
 
 <body id="bg" class="full-boxed">
     <div id="loading-area"></div>
-    <div class="page-wrapers">
-        <!-- Content -->
-        <div class="page-content dlab-login bg-secondry">
-            <div class="top-head logo-white text-center logo-header">
-                <a href="index.php">
-                    <img src="images/logo.png" alt="AddedPowerLogo" />
-                </a>
-            </div>
-            <div id="developement-1" class="tab-pane login-form">
-                <form action="signup.php" method="post" class="p-a30 dlab-form text-center text-center"
-                    autocomplete="on">
-                    <h3 class="form-title m-t0">Sign Up</h3>
-                    <div class="dlab-separator-outer m-b5">
-                        <div class="dlab-separator bg-primary style-liner"></div>
-                    </div>
-                    <p>Enter your personal details below: </p>
-                    <div class="form-group">
-                        <input name="fname" required="" class="form-control" placeholder="First Name" type="text" />
-                    </div>
-                    <div class="form-group">
-                        <input name="lname" required="" class="form-control" placeholder="Last Name" type="text" />
-                    </div>
-                    <div class="form-group">
-                        <input name="uId" required="" class="form-control" placeholder="User Name" type="text" />
-                    </div>
 
-                    <?php
+
+<!-- Section: Design Block -->
+<section class="">
+  <!-- Jumbotron -->
+  <div class="px-4 py-5 px-md-5 text-center text-lg-start" style="background-color: hsl(0, 0%, 96%)">
+    <div class="container">
+      <div class="row gx-lg-5 align-items-center">
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          <h1 class="my-5 display-3 fw-bold ls-tight">
+            The best offer <br />
+            <span class="text-success">for your car</span>
+          </h1>
+        </div>
+
+        <div class="col-lg-6 mb-5 mb-lg-0">
+                 <?php
 
                     if(isset($_GET["error"])){
                         if($_GET["error"] == "takenID"){
@@ -71,40 +78,82 @@
                     }
 
                     ?>
+          <div class="card">
+            <div class="card-body py-5 px-md-5">
+              <form action="signup.php" method="post">
+                <!-- 2 column grid layout with text inputs for the first and last names -->
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <input type="text" id="form3Example1" name = "fname" class="form-control" />
+                      <label class="form-label" for="form3Example1">First name</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <input type="text" id="form3Example2" class="form-control" name = "lname" />
+                      <label class="form-label" for="form3Example2">Last name</label>
+                    </div>
+                  </div>
+                </div>
 
-                    <div class="form-group">
-                        <input name="email" required="" class="form-control" placeholder="Email Id" type="text" />
-                    </div>
-                    <div class="form-group">
-                        <input name="tel" required="" class="form-control" placeholder="Phone Number" type="text" />
-                    </div>
+                <div class="form-outline mb-4">
+                  <input type="text" id="form3Example3" class="form-control" name="uId" />
+                  <label class="form-label" for="form3Example3">Username</label>
+                </div>
 
-                    <div class="form-group">
-                        <input name="pwd" required="" class="form-control" placeholder="Password" type="password" />
-                    </div>
-                    <div class="">
-                        <input name="pwdRepeat" required="" class="form-control" placeholder="Re-type Your Password"
-                            type="password" />
-                    </div>
-                    <div class="m-b30">
-                        <input id="check2" type="checkbox" />
-                        <label for="check2">I agree to the <a href="#">Terms of Service </a>& <a href="#">Privacy
-                                Policy</a> </label>
-                    </div>
-                    <div class="form-group text-left ">
-                        <a class="site-button outline gray" data-bs-toggle="tab" href="#login">Back</a>
-                        <input type="submit" name="submit" value="submit" class="site-button float-end"></button>
-                    </div>
-                </form>
+                 <!-- Email input -->
+                <div class="form-outline mb-4">
+                  <input type="text" id="form3Example3" class="form-control" name="email" />
+                  <label class="form-label" for="form3Example3">Email address</label>
+                </div>
+
+
+                <div class="form-outline mb-4">
+                  <input type="tel" id="form3Example4" class="form-control" name="tel" />
+                  <label class="form-label" for="form3Example4">Phone Number</label>
+                </div>
+
+                
+                <!-- Password input -->
+                <div class="form-outline mb-4">
+                  <input type="password" id="form3Example4" class="form-control" name = "pwd" />
+                  <label class="form-label" for="form3Example4">Password</label>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <input type="password" id="form3Example4" class="form-control" name="pwdRepeat" />
+                  <label class="form-label" for="form3Example4">Re-enter Password</label>
+                </div>
+
+
+                <!-- Submit button -->
+                <button type="submit" name="submit" value="submit" class="btn btn-success btn-block mb-4">
+                  Sign up
+                </button>
+              </form>
+
+                <a href="index.php">
+                <button  class="btn btn-Light btn-block mb-4">
+                  Back
+                </button>
+                </a>
             </div>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
+  <!-- Jumbotron -->
+</section>
+<!-- Section: Design Block -->
+
     <div class="bottom-footer text-center text-white">
         <p>2022 © Pseudo Program Nerds. </p>
     </div>
-    </div>
+    
     <!-- Content END-->
-    </div>
+    
     <!-- JavaScript  files ========================================= -->
     <script src="js/jquery.min.js"></script><!-- JQUERY.MIN JS -->
     <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script><!-- BOOTSTRAP.MIN JS -->
@@ -120,6 +169,11 @@
     <script src="js/custom.min.js"></script><!-- CUSTOM FUCTIONS  -->
     <script src="js/dz.carousel.min.js"></script><!-- SORTCODE FUCTIONS  -->
     <script src="js/dz.ajax.js"></script><!-- CONTACT JS -->
+        <!-- MDB -->
+    <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.js"
+    ></script>
 </body>
 
 </html>

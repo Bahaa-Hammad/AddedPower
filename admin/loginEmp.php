@@ -32,6 +32,9 @@
 		<link href="Design/css/sb-admin-2.min.css" rel="stylesheet">
 		<link href="Design/css/main.css" rel="stylesheet">
 
+    <!-- FAVICONS ICON -->
+    <link rel="icon" href="../images/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.png" />
 
 	</head>
 	<body>

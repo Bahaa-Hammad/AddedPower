@@ -135,9 +135,17 @@
             
                     $stmtgetCurrentAppointmentID->execute();
                     $appointment_id = $stmtgetCurrentAppointmentID->fetch();
+
+					// BAHAA HBD
+
+					if($client_count > 0){
+						$c = $client_id; // For returning clients 
+					}else{
+						$c = $client_id[0]; // For new Clients,  $client_id[0] can not make more appoinments
+					}
                     
                     $stmt_appointment = $con->prepare("insert into appointments(date_created, client_id, employee_id, start_time, end_time_expected ) values(?, ?, ?, ?, ?)");
-                    $stmt_appointment->execute(array(Date("Y-m-d H:i"),$client_id[0],$selected_employee,$start_time,$end_time));
+                    $stmt_appointment->execute(array(Date("Y-m-d H:i"),$c,$selected_employee,$start_time,$end_time)); 
 
                     foreach($selected_services as $service)
                     {

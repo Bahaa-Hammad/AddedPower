@@ -41,7 +41,9 @@
     <link rel="stylesheet" type="text/css" href="plugins/revolution/css/navigation.css">
 
 </head>
-
+<?php
+    require_once 'dbConn.php';
+?>
 <body id="bg">
     <div id="loading-area"></div>
     <div class="page-wraper">
@@ -52,6 +54,13 @@
 
 
 
+
+         <?php
+
+         $read = "SELECT * FROM images WHERE img_id = 1"; //query
+         $result = mysqli_query($conn,$read); //connection, query
+         $record = mysqli_fetch_array($result);
+        ?>
         <!-- header END -->
         <!-- Content -->
         <div class="page-content">
@@ -66,7 +75,7 @@
                                     <!-- SLIDE 1 -->
                                     <li data-index="rs-1000" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="images/main-slider/Slider1.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                                         <!-- MAIN IMAGE -->
-                                        <img src="images/main-slider/Slider1.jpg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina />
+                                        <img src="addedPower/<?php echo $record['img_path'] ?>" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina />
                                         <!-- LAYER NR. 1 [ for overlay ] -->
                                         <div class="tp-caption tp-shape tp-shapewrapper " id="slide-100-layer-1" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="full" data-height="full" data-whitespace="nowrap" data-type="shape" data-basealign="slide" data-responsive_offset="off" data-responsive="off" data-frames='[{"from":"opacity:0;","speed":1000,"to":"o:1;","delay":0,"ease":"Power4.easeOut"},{"delay":"wait","speed":1000,"to":"opacity:0;","ease":"Power4.easeOut"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 12;background-color:rgba(0, 0, 0, 0.50);border-color:rgba(0, 0, 0, 0);border-width:0px;">
                                         </div>
@@ -96,10 +105,17 @@
                                                     More</span><i class="fas fa-angle-right"></i></a>
                                         </div>
                                     </li>
+
+                                     <?php
+
+                                        $read = "SELECT * FROM images WHERE img_id = 2"; //query
+                                        $result = mysqli_query($conn,$read); //connection, query
+                                        $record = mysqli_fetch_array($result);
+                                    ?>
                                     <!-- SLIDE 2 -->
                                     <li data-index="rs-2000" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="images/main-slider/Slider2.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                                         <!-- MAIN IMAGE -->
-                                        <img src="images/main-slider/Slider2.jpg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina />
+                                        <img src="addedPower/<?php echo $record['img_path']?>" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina />
                                         <!-- LAYERS -->
                                         <!-- LAYER NR. 1 [ for overlay ] -->
                                         <div class="tp-caption tp-shape tp-shapewrapper " id="slide-200-layer-1" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="full" data-height="full" data-whitespace="nowrap" data-type="shape" data-basealign="slide" data-responsive_offset="off" data-responsive="off" data-frames='[{"from":"opacity:0;","speed":1000,"to":"o:1;","delay":0,"ease":"Power4.easeOut"},{"delay":"wait","speed":1000,"to":"opacity:0;","ease":"Power4.easeOut"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 12;background-color:rgba(0, 0, 0, 0.50);border-color:rgba(0, 0, 0, 0);border-width:0px;">
@@ -127,10 +143,17 @@
 										{"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 13;"><a href="about-2.php" class="site-button  button-skew"><span>Read More</span><i class="fas fa-angle-right"></i></a>
                                         </div>
                                     </li>
+
+                                     <?php
+
+                                        $read = "SELECT * FROM images WHERE img_id = 3"; //query
+                                        $result = mysqli_query($conn,$read); //connection, query
+                                        $record = mysqli_fetch_array($result);
+                                    ?>
                                     <!-- SLIDE 3 -->
                                     <li data-index="rs-3000" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="images/main-slider/Slider3.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                                         <!-- MAIN IMAGE -->
-                                        <img src="images/main-slider/Slider3.jpg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina />
+                                        <img src="addedPower/<?php echo $record['img_path']?>" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina />
                                         <!-- LAYERS -->
                                         <!-- LAYER NR. 1 [ for overlay ] -->
                                         <div class="tp-caption tp-shape tp-shapewrapper " id="slide-300-layer-1" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="full" data-height="full" data-whitespace="nowrap" data-type="shape" data-basealign="slide" data-responsive_offset="off" data-responsive="off" data-frames='[{"from":"opacity:0;","speed":1000,"to":"o:1;","delay":0,"ease":"Power4.easeOut"},{"delay":"wait","speed":1000,"to":"opacity:0;","ease":"Power4.easeOut"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 12;background-color:rgba(0, 0, 0, 0.50);border-color:rgba(0, 0, 0, 0);border-width:0px;">
@@ -529,11 +552,17 @@
                             </div>
                             <p>The team in AddedPower consists of many employees that are highly expert and have a big amount of knowledge in everything related to cars</p>
                         </div>
+                        <?php
+
+                            $read = "SELECT * FROM images WHERE img_id = 4"; //query
+                            $result = mysqli_query($conn,$read); //connection, query
+                            $record = mysqli_fetch_array($result);
+                        ?>
                         <div class="section-content text-center ">
                             <div class="row">
                                 <div class="col-lg-3 col-md-6 col-sm-6">
                                     <div class="dlab-box m-b30">
-                                        <div class="dlab-media"> <a href="our-team.php"> <img width="358" height="460" alt="" src="images/our-team/team1.jpg"> </a>
+                                        <div class="dlab-media"> <a href="our-team.php"> <img width="358" height="460" alt="" src="addedPower/<?php echo $record['img_path']?>"> </a>
                                             <div class="dlab-info-has skew-has  bg-primary">
                                                 <ul class="dlab-social-icon dez-border">
                                                     <li><a class="fab fa-facebook-f" href="https://www.facebook.com/" target="blank"></a>
@@ -552,9 +581,15 @@
                                         </div>
                                     </div>
                                 </div>
+                                <?php
+
+                                $read = "SELECT * FROM images WHERE img_id = 5"; //query
+                                $result = mysqli_query($conn,$read); //connection, query
+                                $record = mysqli_fetch_array($result);
+                                 ?>
                                 <div class="col-lg-3 col-md-6 col-sm-6">
                                     <div class="dlab-box m-b30">
-                                        <div class="dlab-media"> <a href="our-team.php"> <img width="358" height="460" alt="" src="images/our-team/team2.jpg"> </a>
+                                        <div class="dlab-media"> <a href="our-team.php"> <img width="358" height="460" alt="" src="addedPower/<?php echo $record['img_path']?>"> </a>
                                             <div class="dlab-info-has skew-has bg-primary">
                                                 <ul class="dlab-social-icon dez-border">
                                                     <li><a class="fab fa-facebook-f" href="https://www.facebook.com/" target="blank"></a>
@@ -573,9 +608,15 @@
                                         </div>
                                     </div>
                                 </div>
+
+                               <?php
+                                $read = "SELECT * FROM images WHERE img_id = 6"; //query
+                                $result = mysqli_query($conn,$read); //connection, query
+                                $record = mysqli_fetch_array($result);
+                                 ?>
                                 <div class="col-lg-3 col-md-6 col-sm-6">
                                     <div class="dlab-box m-b30">
-                                        <div class="dlab-media"> <a href="our-team.php"> <img width="358" height="460" alt="" src="images/our-team/team3.jpg"> </a>
+                                        <div class="dlab-media"> <a href="our-team.php"> <img width="358" height="460" alt="" src="addedPower/<?php echo $record['img_path']?>"> </a>
                                             <div class="dlab-info-has skew-has bg-primary">
                                                 <ul class="dlab-social-icon dez-border">
                                                     <li><a class="fab fa-facebook-f" href="https://www.facebook.com/" target="blank"></a>
@@ -594,9 +635,14 @@
                                         </div>
                                     </div>
                                 </div>
+                                 <?php
+                                    $read = "SELECT * FROM images WHERE img_id = 7"; //query
+                                    $result = mysqli_query($conn,$read); //connection, query
+                                    $record = mysqli_fetch_array($result);
+                                 ?>
                                 <div class="col-lg-3 col-md-6 col-sm-6">
                                     <div class="dlab-box m-b10">
-                                        <div class="dlab-media"> <a href="our-team.php"> <img width="358" height="460" alt="" src="images/our-team/team4.jpg"> </a>
+                                        <div class="dlab-media"> <a href="our-team.php"> <img width="358" height="460" alt="" src="addedPower/<?php echo $record['img_path']?>"> </a>
                                             <div class="dlab-info-has skew-has bg-primary">
                                                 <ul class="dlab-social-icon dez-border">
                                                     <li><a class="fab fa-facebook-f" href="https://www.facebook.com/" target="blank"></a>
@@ -820,6 +866,8 @@
                                 <a href="about-2.php"> About</a>
                                 <a href="faq-1.php"> FAQs</a>
                                 <a href="contact.php"> Contact</a>
+                                <a href="admin/facultyPort.php"> Faculty</a>
+
                             </div>
                         </div>
                     </div>

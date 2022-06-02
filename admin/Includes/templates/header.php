@@ -69,9 +69,9 @@
 		  			</a>
 	  			</li>
 	  			<li class="nav-item">
-					<a class="nav-link" href="#">
+					<a class="nav-link" href="img.php">
 		  				<i class="far fa-image"></i>
-		  				<span>Samples</span>
+		  				<span>Site Banners</span>
 		  			</a>
 	  			</li>
 			  	
